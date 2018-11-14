@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анастасия Швецова](https://up.htmlacademy.ru/htmlcss/23/user/799917).
-* Наставник: [Елизавета Винокурова](https://htmlacademy.ru/profile/redrica).
+* Наставник: [Елизавета Винокурова](https://up.htmlacademy.ru/htmlcss/23/user/123355).
 
 ---
 
