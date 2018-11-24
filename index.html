@@ -47,10 +47,10 @@
         	<ul class="catalog-list">
         		<li class="catalog-item">
         			<article>
-        				<h3>
-        					<a href="#">Перфоратор BOSCH BFG 9000</a>
-        				</h3> 
         				<a href="#">
+        					<h3>
+        						Перфоратор BOSCH BFG 9000
+        					</h3>
         					<img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
         				</a>
         				<div class="product-buttons">
@@ -63,10 +63,10 @@
         		</li>
         		<li class="catalog-item">
         			<article>
-        				<h3>
-        					<a href="#">Перфоратор BOSCH BFG 3000</a>
-        				</h3> 
         				<a href="#">
+        					<h3>
+        						Перфоратор BOSCH BFG 3000
+        					</h3>
         					<img src="img/bfg3000.jpg" width="127" height="112"  alt="Перфоратор BOSCH BFG 3000">
         				</a>
         				<div class="product-buttons">
@@ -79,10 +79,10 @@
         		</li>
         		<li class="catalog-item">
         			<article>
-        				<h3>
-        					<a href="#">Перфоратор BOSCH BFG 6000</a>
-        				</h3> 
         				<a href="#">
+        					<h3>
+        						Перфоратор BOSCH BFG 6000
+        					</h3>
         					<img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         				</a>
         				<div class="product-buttons">
@@ -95,10 +95,10 @@
         		</li>
         		<li class="catalog-item">
         			<article>
-        				<h3>
-        					<a href="#">Перфоратор BOSCH BFG 2000</a>
-        				</h3> 
         				<a href="#">
+        					<h3>
+        						Перфоратор BOSCH BFG 2000
+        					</h3>
         					<img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         				</a>
         				<div class="product-buttons">
@@ -113,7 +113,17 @@
         <section>
         	<h2>Популярные производители:</h2>
         	<a href="#" class="button">Все производители</a>
-        	<!--Здесь логотипы производителей-->
+        	<ul>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Bosch"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Makita"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Dewalt"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Интерскол"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Hitachi"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы
+        			LG"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы AEG"></li>
+        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Metabo"></li>
+        	</ul>
         </section>
         <section>
         <h2>Сервисы</h2>
@@ -139,10 +149,36 @@
   			<h2>Контакты</h2>
   			<p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
   			<div class="map">
-  				<img src="img/map.png" width="300" height="158" alt="Карта">
+  				<img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
   			</div>
   			<a class="button" href="#">Заблудились? Напишите нам!</a>
   		</section>
+  		<form action="https://echo.htmlacademy.ru" method="post">
+  			<section class="modal write-us">
+  				<h2 class="visually-hidden">Напишите нам</h2>
+  				<p>
+  					<label class="visually-hidden" for="user-name">Ваше имя:</label>
+            		<input class="user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+  				</p>
+  				<p>
+  					<label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
+            		<input class="user-mail" id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
+  				</p>
+  				<p>
+  					<label class="visually-hidden" for="comment-field">Текст письма:</label>
+  					<textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+  				</p>
+  					<button class="button" type="submit">Отправить</button>
+  					<button class="modal-close" type="button">Закрыть</button>
+  			</section>
+  		</form>
+  		<section class="modal modal-map">
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <img src="img/big-map.png" width="1522" height="581" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
   	</main>
   	<footer>
   		<a class="main-logo">
