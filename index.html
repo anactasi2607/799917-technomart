@@ -9,8 +9,10 @@
   		<a class="main-logo">
   			<img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
   		</a>
-        <div>Поиск:</div>
-  		<!--Здесь будет input type="search" name="search" placeholder="Поиск:"-->
+  		<form action="/echo" method="post">
+  			<input type="search" name="search" placeholder="Поиск:" id="search">
+  			<label class="visually-hidden" for="search">Поиск по сайту</label>
+  		</form>
   		<a href="#">Закладки:0</a>
   		<a href="#">Корзина:0</a>
   		<a href="#">Оформить заказ</a>
@@ -18,7 +20,12 @@
   		<a href="tel:+78125550555">+7(812)555-05-55</a>
   		<span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
   		<ul class="user-navigation">
-  			<li class="login"><a href="#">Войти</a></li>
+  			<li class="login">
+  				<a href="#">
+  					Войти
+  					<span class="visually-hidden">Войти</span>
+  				</a>
+  			</li>
   			<li class="registration"><a href="#">Регистрация</a></li>
 			<li><a href="#"><!--Здесь будет фоновое изображение иконки входа-->
       			Равшан Джамшутович</a>
@@ -114,15 +121,47 @@
         	<h2>Популярные производители:</h2>
         	<a href="#" class="button">Все производители</a>
         	<ul>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Bosch"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Makita"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Dewalt"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Интерскол"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Hitachi"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы
-        			LG"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы AEG"></li>
-        		<li><img src="#" width="#" height="#" alt="Логотип фирмы Metabo"></li>
+        		<li>
+        			<a href="www.bosch.ru">
+        				<img src="img/bosch.png" width="220" height="145" alt="Логотип фирмы Bosch">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.makita.ru">
+        				<img src="img/makita.png" width="220" height="145" alt="Логотип фирмы Makita">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.dewalt.ru">
+        				<img src="img/dewalt.png" width="220" height="145" alt="Логотип фирмы Dewalt">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.interskol.ru">
+        				<img src="img/inter.png" width="220" height="145" alt="Логотип фирмы Интерскол">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.hitachi.ru">
+        				<img src="img/hitachi.png" width="220" height="145" alt="Логотип фирмы Hitachi">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.lg.com">
+        				<img src="img/lg.png" width="220" height="145" alt="Логотип фирмы
+        			LG">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.aeg.ru">
+        				<img src="img/aeg.png" width="220" height="145" alt="Логотип фирмы AEG">
+        			</a>
+        		</li>
+        		<li>
+        			<a href="www.metabo.com">
+        				<img src="img/metabo.png" width="220" height="145" alt="Логотип фирмы Metabo">
+        			</a>
+        		</li>
         	</ul>
         </section>
         <section>
@@ -156,27 +195,25 @@
   		<form action="https://echo.htmlacademy.ru" method="post">
   			<section class="modal write-us">
   				<h2 class="visually-hidden">Напишите нам</h2>
-  				<p>
-  					<label class="visually-hidden" for="user-name">Ваше имя:</label>
+  				<div>
+  					<label for="user-name">Ваше имя:</label>
             		<input class="user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-  				</p>
-  				<p>
-  					<label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
+  				</div>
+  				<div>
+  					<label for="user-mail">Ваш e-mail:</label>
             		<input class="user-mail" id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
-  				</p>
-  				<p>
-  					<label class="visually-hidden" for="comment-field">Текст письма:</label>
+  				</div>
+  				<div>
+  					<label for="comment-field">Текст письма:</label>
   					<textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
-  				</p>
-  					<button class="button" type="submit">Отправить</button>
-  					<button class="modal-close" type="button">Закрыть</button>
+  				</div>
   			</section>
   		</form>
   		<section class="modal modal-map">
         <h2 class="visually-hidden">
           Как до нас добраться
         </h2>
-        <img src="img/big-map.png" width="1522" height="581" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+        <img src="img/big-map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
         <button class="modal-close" type="button">Закрыть</button>
       </section>
   	</main>

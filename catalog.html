@@ -9,8 +9,10 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
-      <div>Поиск:</div>
-      <!--Здесь будет input type="search" name="search" placeholder="Поиск:"-->
+      <form action="/echo" method="post">
+        <input type="search" name="search" placeholder="Поиск:" id="search">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
+      </form>      
       <a href="#">Закладки:0</a>
       <a href="#">Корзина:0</a>
       <a href="#">Оформить заказ</a>
@@ -18,7 +20,12 @@
       <a href="tel:+78125550555">+7(812)555-05-55</a>
       <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <ul class="user-navigation">
-        <li class="login"><a href="#">Войти</a></li>
+        <li class="login">
+          <a href="#">
+            Войти
+            <span class="visually-hidden">Войти</span>
+          </a>
+        </li>
         <li class="registration"><a href="#">Регистрация</a></li>
       </ul>
       <ul class="user-navigation">
@@ -54,41 +61,42 @@
       <section class="filters">
         <h3>Фильтр</h3>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <div>
             <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch"  id="filter-bosch" checked>
                   <label for="filter-bosch">
                   Bosch
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
                   <label for="filter-interskol">
                   Интерскол
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                   <label for="filter-makita">
-                  Makita</label>
+                  Makita
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">
                   Dewalt
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">
                   Hitachi
                 </label>
                 </li>
               </ul>
-          </fieldset>
-          <fieldset>
+          </div>
+          <div>
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">
@@ -104,12 +112,12 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <button type="submit" class="filter-button button">
             Показать
           </button>
-          </section>
         </form>
+      </section> 
       <section class="catalog">
         <h3 class="visually-hidden">Список товаров</h3>
         <ul class="catalog-list">
@@ -255,6 +263,15 @@
             </article> 
           </li>
         </ul>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <section class="modal cart">
+            <h2 class="visually-hidden">Статус товара</h2>
+              <p>Товар добавлен в корзину!</p>
+              <button class="button" type="submit">Оформить заказ</button>
+              <button class="button" type="submit">Продолжить покупки</button>
+              <button class="modal-close" type="button">Закрыть</button>
+          </section>
+        </form>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
