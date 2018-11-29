@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <a class="main-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
       <div class="header-right">
@@ -25,18 +25,18 @@
       <a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
       <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <ul class="user-navigation">
-        <li class="login">
+        <li class="user-link-big">
           <a href="#">
             Войти
           </a>
         </li>
-        <li class="registration"><a href="#">Регистрация</a></li>
-      <li class="profile-name"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->
+        <li class="user-link-big"><a href="#">Регистрация</a></li>
+      <li class="user-link-big"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->
             Равшан Джамшутович</a>
           </li>
-          <li class="output"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
-          <li class="orders"><a href="#">Мои заказы</a></li>
-          <li class="profile"><a href="#">Личный кабинет</a></li>
+          <li class="user-link-big"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
+          <li class="user-link-small"><a href="#">Мои заказы</a></li>
+          <li class="user-link-small"><a href="#">Личный кабинет</a></li>
         </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -50,19 +50,20 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <ul class="breadcrumbs">
         <li><a href="index.html"><!--Здесь будет фоновое изображение иконки перехода на главную--></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
-      <h2>Перфораторы</h2>  
+      <h2 class="page-title">Перфораторы</h2>  
       <section class="filters">
         <h3>Фильтр</h3>
+        <span class="filter-criterion">Цена:</span>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <div>
-            <span>Производители:</span>
+            <span class="filter-criterion">Производители:</span>
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch"  id="filter-bosch" checked>
@@ -97,7 +98,7 @@
               </ul>
           </div>
           <div>
-            <span>Питание:</span>
+            <span class="filter-criterion">Питание:</span>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
@@ -133,8 +134,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>22500 р.</b>
-              <b>15500 р.</b>
+              <b class="old-price">22500 р.</b>
+              <b class="price">15500 р.</b>
             </article>
           </li>
            <li class="catalog-item">
@@ -149,8 +150,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>30500 р.</b>
-              <b>25500 р.</b>
+              <b class="old-price">30500 р.</b>
+              <b class="price">25500 р.</b>
             </article>
           </li>
            <li class="catalog-item">
@@ -165,7 +166,7 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>12500 р.</b>
+              <b class="price">12500 р.</b>
             </article> 
           </li>
                     <li class="catalog-item">
@@ -180,8 +181,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>22500 р.</b>
-              <b>15500 р.</b>
+              <b class="old-price">22500 р.</b>
+              <b class="price">15500 р.</b>
             </article>
           </li>
            <li class="catalog-item">
@@ -196,8 +197,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>30500 р.</b>
-              <b>25500 р.</b>
+              <b class="old-price">30500 р.</b>
+              <b class="price">25500 р.</b>
             </article>
           </li>
            <li class="catalog-item">
@@ -212,7 +213,7 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>12500 р.</b>
+              <b class="price">12500 р.</b>
             </article> 
           </li>
           <li class="catalog-item">
@@ -227,8 +228,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>22500 р.</b>
-              <b>15500 р.</b>
+              <b class="old-price">22500 р.</b>
+              <b class="price">15500 р.</b>
             </article>
           </li>
             <li class="catalog-item">
@@ -243,8 +244,8 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>30500 р.</b>
-              <b>25500 р.</b>
+              <b class="old-price">30500 р.</b>
+              <b class="price">25500 р.</b>
             </article>
           </li>
            <li class="catalog-item">
@@ -259,7 +260,7 @@
                 <a href="#" class="button">Купить</a>
                 <a href="#" class="button">В закладки</a>
               </div>
-              <b>12500 р.</b>
+              <b class="price">12500 р.</b>
             </article> 
           </li>
         </ul>

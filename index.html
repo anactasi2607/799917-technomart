@@ -25,18 +25,18 @@
   		<a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
   		<span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
   		<ul class="user-navigation">
-  			<li class="login">
+  			<li class="user-link-big">
   				<a href="#">
   					Войти
   				</a>
   			</li>
-  			<li class="registration"><a href="#">Регистрация</a></li>
-			<li class="profile-name"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->
+  			<li class="user-link-big"><a href="#">Регистрация</a></li>
+			<li class="user-link-big"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->
       			Равшан Джамшутович</a>
       		</li>
-      		<li class="output"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
-      		<li class="orders"><a href="#">Мои заказы</a></li>
-      		<li class="profile"><a href="#">Личный кабинет</a></li>
+      		<li class="user-link-big"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
+      		<li class="user-link-small"><a href="#">Мои заказы</a></li>
+      		<li class="user-link-small"><a href="#">Личный кабинет</a></li>
       	</ul>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
@@ -68,8 +68,8 @@
         					<a href="#" class="button">Купить</a>
         					<a href="#" class="button">В закладки</a>
         				</div>
-        				<b>32500 р.</b>
-        				<b>25500 р.</b>
+        				<b class="old-price">32500 р.</b>
+        				<b class="price">25500 р.</b>
         			</article>
         		</li>
         		<li class="catalog-item">
@@ -84,8 +84,8 @@
         					<a href="#" class="button">Купить</a>
         					<a href="#" class="button">В закладки</a>
         				</div>
-        				<b>22500 р.</b>
-        				<b>15500 р.</b>
+        				<b class="old-price">22500 р.</b>
+        				<b class="price">15500 р.</b>
         			</article>
         		</li>
         		<li class="catalog-item">
@@ -100,8 +100,8 @@
         					<a href="#" class="button">Купить</a>
         					<a href="#" class="button">В закладки</a>
         				</div>
-        				<b>30500 р.</b>
-        				<b>25500 р.</b>
+        				<b class="old-price">30500 р.</b>
+        				<b class="price">25500 р.</b>
         			</article>
         		</li>
         		<li class="catalog-item">
@@ -116,15 +116,15 @@
         					<a href="#" class="button">Купить</a>
         					<a href="#" class="button">В закладки</a>
         				</div>
-        				<b>12500 р.</b>
+        				<b class="price">12500 р.</b>
         			</article> 
         		</li>
        		</ul>
         </section>
-        <section>
+        <section class="brands">
         	<h2>Популярные производители:</h2>
         	<a href="#" class="button">Все производители</a>
-        	<ul class="brands">
+        	<ul class="brands-logo">
         		<li>
         			<a href="http://bosch.ru">
         				<img src="img/bosch.png" width="220" height="145" alt="Логотип фирмы Bosch">
@@ -168,12 +168,12 @@
         		</li>
         	</ul>
         </section>
-        <section>
+        <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
         </section>
         <!--здесь блок про доставку/гарантию/кредит-->
-        <section>
+        <section class="delivery">
         	<h2>Доставка</h2>
         	<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </section>
@@ -186,7 +186,7 @@
   				<li><a href="#">Автотрейдинг</a></li>
   				<li><a href="#">ЖелДорЭкспедиция</a></li>
   			</ul>
-  			<a class="button" href="#">Подробнее о компании</a>
+  			<a class="button more" href="#">Подробнее о компании</a>
   		</section>
   		<section class="contacts">
   			<h2>Контакты</h2>
@@ -194,7 +194,7 @@
   			<div class="map">
   				<img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
   			</div>
-  			<a class="button" href="#">Заблудились? Напишите нам!</a>
+  			<a class="button help" href="#">Заблудились? Напишите нам!</a>
   		</section>
   		<form action="https://echo.htmlacademy.ru" method="post">
   			<section class="modal write-us">

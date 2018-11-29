@@ -1,3 +1,4 @@
+/*базовые стили*/
 body {
 	margin: 0;
 	padding: 0;
@@ -8,255 +9,257 @@ body {
 	color: #000000;
 	background-color: #f1f5f7;
 }
-/*базовые стили*/
 
+/*убираем подчеркивание ссылки*/
+a {
+  text-decoration: none;
+}
+
+/*общие стили для блока правее логотипа*/
 .header-right {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	color:#ffffff;
+	color :#ffffff;
 	background-color: #293449;
 }
-/*общие стили для блока правее логотипа*/
-.header-right a {
-	color:#ffffff;
-}
+
 /*определяю цвет текста для ссылок*/
-.header-right a:last-child {
-	background-color:#63a63e;
+.header-right a {
+	color: #ffffff;
 }
+
 /*цвет фона для ссылки на оформление заказа*/
-.header-right input {
-	background-color:#293449;
+.header-right a:last-child {
+	background-color: #63a63e;
 }
+
 /*цвет формы поиска*/
+.header-right input {
+	background-color: #293449;
+}
+
+/*цвет фона при наведении для поиска и ссылок*/
 .header-right a:hover,
 .header-right input:hover {
-	background-color:#212a3a;
+	background-color: #212a3a;
 }
-/*цвет фона при наведении для поиска и ссылок*/
-.header-right a:last-child:hover {
-	background-color:#5fbb2d;
-}
+
 /*цвет фона при наведении для ссылки на оформление заказа*/
-.header-right a:active{
-	background-color:#161d29;
+.header-right a:last-child:hover {
+	background-color: #5fbb2d;
 }
+
 /*цвет фона для ссылок при нажатии*/
-.header-right a:last-child:active {
-	background-color:#518534;
+.header-right a:active{
+	background-color: #161d29;
 }
+
 /*цвет фона для ссылки на оформление при нажатии*/
-.header-right input:focus {
-	background-color:#ffffff;
+.header-right a:last-child:active {
+	background-color: #518534;
+	opacity: 0.5;
 }
+
 /*цвет фона для поля поиска в фокусе и при нажатии*/
-h1 {
+.header-right input:focus {
+	background-color: #ffffff;
+}
+
+/*правило для заголовка первого уровня*/
+.main-header h1 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 23px;
-	color:#ee3643;
+	color: #ee3643;
 	background-color: #f1f5f7;
-	font-style:italic;
+	font-style: italic;
 }
-/*правило для заголовка первого уровня*/
+
+/*правило для номера телефона*/
 .tel {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 21px;
-	color:#ee3643;
+	color: #ee3643;
 	background-color: #f1f5f7;
-	border: 1px solid #ffffff;
+	border: 3px solid #ffffff;
 }
-/*правило для номера телефона*/
+
+/*правило для адреса*/
 .address {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	color:#32425c;
+	color: #32425c;
 	background-color: #f1f5f7;
 }
-/*правило для адреса*/
+
+/*аннулирует цвет и подчеркивание ссылок*/
 a {
 	text-decoration: none;
-	color: none;
 }
-/*аннулирует цвет и подчеркивание ссылок*/
-.login a,
-.registration a {
+
+/* войти,имя профиля и регистрация в покое*/
+.user-link-big a{
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
+	font-size: 21px;
+	line-height: 21px;
 	color: #000000;
-	background-color:#ffffff;
+	background-color: #ffffff;
 }
-/* войти и регистрация в покое*/
-.login a:hover,
-.registration a:hover {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
+
+/*войти,имя профиля и регистрация при наведении*/
+.user-link-big a:hover {
 	color: #ee3643;
-	background-color:#ffffff;
 }
-/*войти и регистрация при наведении*/
-.login a:active,
-.registration a:active {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
-	color: #000000;
-	background-color:#ffffff;
-	opacity: 0.7;
-}
-/*войти и регистрация при клике*/
-.profile-name a{
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
-	color: #000000;
-	background-color:#ffffff;
-}
-/*им пользователя в покое*/
-.profile-name a:hover{
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
-	color: #000000;
-	background-color:#ffffff;
-}/*имя пользователя при наведении, тут при наведении будет меняться только поведение иконок, которых пока нет*/
 
-.profile-name a:active{
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:21px;
-	line-height:21px;
+/*войти, имя профиля и регистрация при клике*/
+.user-link-big a:active {
 	color: #000000;
-	background-color:#ffffff;
-	opacity: 0.7;
+	opacity: 0.5;
 }
-/*имя пользователя при клике*/
 
-.orders a,
-.profile a{
+/*заказы и личный кабинет в покое*/
+.user-link-small a {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:16px;
-	line-height:18px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: normal;
 	color: #32425c;
-	background-color: #ffffff;
-	text-decoration:underline;
+	text-decoration: underline;
 }
-/*заказы и личный каьинет в покое*/
-.orders a:hover,
-.profile a:hover {
-	color: #ee3643;
-}
+
 /*заказы и личный кабинет при наведении*/
-.orders a:active,
-.profile a:active{
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:16px;
-	line-height:18px;
-	font-weight: normal;
-	color: #32425c;
-	background-color: #ffffff;
-	text-decoration:underline;
-	opacity: 0.7;
+.user-link-small a:hover{
+	color: #ee3643;
 }
+
 /*заказы и личный кабинет клик*/
+.user-link-small a:active{
+	color: #32425c;
+	opacity: 0.5;
+}
+
+/*правило для главной навигации*/
 .main-navigation {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:17px;
-	line-height:17px;
+	font-size: 17px;
+	line-height: 17px;
 	font-weight: normal;
 	color: #ffffff;
 	background-color: #32425c;
 }
-/*правило для главной навигации*/
-.main-navigation li:hover {
-	background-color:#293449;
-}
+
 /*главная навигация при наведении*/
-.main-navigation li:active {
-	background-color:#1d2739;
-	opacity: 0.7;
+.main-navigation li:hover {
+	background-color: #293449;
 }
+
 /*главная навигация при клике*/
+.main-navigation li:active {
+	background-color: #1d2739;
+	opacity: 0.5;
+}
+
+/*отмена точек в списках*/
 li {
 	list-style: none;
 }
-/*отмена точек в списках*/
 
+/*цвет ссылок в глав.навигации*/
 .site-navigation a {
 	color: #ffffff;
 }
-/*цвет ссылок в глав.навигации*/
-.visually-hidden {
-	display:none;
+
+/*это внутренняя тень для пунктов меню*/
+.site-navigation li{
+	box-shadow: inset 0 -30px 0px -25px #293449;
 }
-/*спрятала скрытые элементы*/
-.brands li:active{
-	opacity: 0.7;
-}
+
 /*прозрачность бренды при клике*/
-h2 {
+.brands li:active{
+	opacity: 0.5;
+}
+
+/*правило для заголовков второго уровня*/
+.catalog h2,
+.brands h2,
+.services h2,
+.delivery h2,
+.about-us h2,
+.contacts h2,
+.write-us h2,
+.modal-map h2,
+.main h2,
+.perforator h2,
+.container h2 {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:30px;
-	line-height:30px;
+	font-size: 30px;
+	line-height: 30px;
 	font-weight: normal;
 	color: #000000;
 	background-color: #ffffff;
 }
-/*правило для заголовков второго уровня*/
+
+/*правило для параграфов о нас, контакты, перфораторы*/
 .about-us p,
 .contacts p,
 .perforator p {
 	font-family: PT Sans, Arial, sans-serif;
-	font-size:13px;
-	line-height:24px;
+	font-size: 13px;
+	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
 	background-color: #ffffff;
 }
-/*правило для параграфов о нас, контакты, перфораторы*/
+
+/*цвет фона для секций*/
 section {
 	background-color: #ffffff;
 }
-/*цвет фона для секций*/
+
+/*правило для ссылок на компании-перевозчики*/
 .company a {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:18px;
-	line-height:20px;
+	font-size: 18px;
+	line-height: 20px;
 	font-weight: normal;
 	color: #000000;
 	background-color: #ffffff;
 }
-/*правило для ссылок на компании-перевозчики*/
+
+/*спрятала модальные окна*/
 .modal {
 	display: none;
 }
-/*спрятала модальные окна*/
-footer {
-	background-color:#32425c;
-}
+
 /*цвет фона для футера*/
+footer {
+	background-color: #32425c;
+}
+
+/*первая строка навигации в футере в покое*/
 .footer-navigation-1 a {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:18px;
-	line-height:24px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: normal;
 	color: #f1f5f7;
 	background-color: #32425c;
 }
-/*первая строка навигации в футере в покое*/
-.footer-navigation-1 a:hover {
-	text-decoration:underline;
-}
+
 /*первая строка навигации в футере при наведении*/
-.footer-navigation-1 a:active {
-	opacity: 0.7;
+.footer-navigation-1 a:hover {
+	text-decoration: underline;
 }
+
 /*первая строка навигации в футере при клике*/
+.footer-navigation-1 a:active {
+	opacity: 0.5;
+}
+
+/*вторая строка навигации в футере в покое*/
 .footer-navigation-2 a {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size:18px;
@@ -265,65 +268,210 @@ footer {
 	color: #ffd180;
 	background-color: #32425c;
 }
-/*вторая строка навигации в футере в покое*/
-.footer-navigation-2 a:hover {
-	text-decoration:underline;
-}
+
 /*вторая строка навигации в футере при наведении*/
-.footer-navigation-2 a:active {
-	opacity: 0.7;
+.footer-navigation-2 a:hover {
+	text-decoration: underline;
 }
+
 /*вторая строка навигации в футере при клике*/
+.footer-navigation-2 a:active {
+	opacity: 0.5;
+}
+
+/*телефон и адрес в футере*/
 .footer-address,
 .footer-tel {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:18px;
-	line-height:24px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: normal;
 	color: #f1f5f7;
 	background-color: #32425c;
 }
-/*телефон и адрес в футере*/
+
+/*цвет фона в нижней части футера*/
 .lower-footer {
 	background: #293449;
 }
-/*цвет фона в нижней части футера*/
+
+/*стилизация копирайта*/
 .copyright {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:16px;
-	line-height:18px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
 	background-color: #293449;
 }
-/*стилизация копирайта*/
+
+/*обратная связь и  разработчик*/
 .feedback,
 .developed-by {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:16px;
-	line-height:18px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
 	background-color: #293449;
 }
+
 /*обратная связь и  разработчик*/
 .feedback-mail,
 .site {
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size:16px;
-	line-height:18px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: normal;
 	color: #ffd180;
 	background-color: #293449;
 }
-/*обратная связь и  разработчик*/
+
+/*почта и сайт при наведении*/
 .feedback-mail:hover,
 .site:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
-/*почта и сайт при наведении*/
+
+/*почта и сайт при клике*/
 .feedback-mail:active,
 .site:active {
-	color:#ee3643;
+	color: #ee3643;
 }
-/*почта и сайт при клике*/
+
+/*стилизация ссылок "подробнее о компании" и "напишите нам"*/
+.more,
+.help {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background: #ee3643;
+}
+
+/*при наведении*/
+.more:hover,
+.help:hover {
+	background: #ca2c37;
+}
+
+/*при клике*/
+.more:active,
+.help:active {
+	background: #ba2732;
+}
+
+/*стилизация страницы каталога*/
+.container h2 {
+	color: #32425c;
+	background: #f2f6f8;
+}
+
+/*фон для хлебных крошек*/
+.breadcrumbs {
+	background: #ffffff;
+}
+
+/*стилизация хлебных крошек*/
+.breadcrumbs a {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+  	color: #000000;
+}
+
+/*стилизация критериев отбора в фильтре*/
+ .filter-criterion {
+ 	font-family: PT Sans, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+  	color: #000000;
+  	text-transform: uppercase;
+ }
+
+/*стилизация позиций фильтра*/
+.filter-option {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+  	color: #000000;
+}
+
+/*позиция фильтра заблокирована*/
+.filter-option:disabled {
+	opacity: 0.4;
+}
+
+/*рамка для товаров в каталоге*/
+.catalog article {
+	border: 1px solid #e5e5e5;
+}
+
+/*тень для товаров в каталоге*/
+.catalog article:hover {
+	box-shadow: 0px 3px 20px 0px #abafb8;
+}
+
+/*стилизация названия товаров*/
+.catalog-item h4,
+.catalog-item h3 {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/*стилизация старой цены*/
+.old-price {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: line-through;
+}
+
+ /*новая цена*/
+.price {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	background: #ee3643;
+}
+
+/*фон для параграфа о перфораторах*/
+.perforator p {
+	background: #e5e5e5;
+}
+
+/*стилизация пагинации в покое*/
+.pagination-item a {
+	border: 1px solid #e5e5e5;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+/*пагинация в наведении*/
+.pagination-item a:hover {
+	border: 1px solid #bdc6ca;
+}
+
+/*пагинация при клике*/
+.pagination-item a:active {
+	border: 1px solid #ee3643;
+}
+
+/*текущая страницу*/
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+
