@@ -7,7 +7,7 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
-	background-color: #f1f5f7;
+	background-color: #f2f6f8;
 }
 
 /*убираем подчеркивание ссылки*/
@@ -21,7 +21,6 @@ a {
 	font-size: 17px;
 	line-height: 18px;
 	color :#ffffff;
-	background-color: #293449;
 }
 
 /*определяю цвет текста для ссылок*/
@@ -67,7 +66,8 @@ a {
 }
 
 /*правило для заголовка первого уровня*/
-.main-header h1 {
+.main-header h1,
+.main-title h1 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 23px;
@@ -183,39 +183,16 @@ li {
 }
 
 /*правило для заголовков второго уровня*/
-.catalog h2,
-.brands h2,
-.services h2,
-.delivery h2,
-.about-us h2,
-.contacts h2,
-.write-us h2,
-.modal-map h2,
-.main h2,
-.perforator h2,
-.container h2 {
+.title {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
-	color: #000000;
-	background-color: #ffffff;
+	color: #32425c;
 }
 
-/*правило для параграфов о нас, контакты, перфораторы*/
-.about-us p,
-.contacts p,
-.perforator p {
-	font-family: PT Sans, Arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	font-weight: normal;
-	color: #000000;
-	background-color: #ffffff;
-}
-
-/*цвет фона для секций*/
-section {
+/*цвет фона для секций белого цвета*/
+.white {
 	background-color: #ffffff;
 }
 
@@ -236,17 +213,16 @@ section {
 
 /*цвет фона для футера*/
 footer {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
 	background-color: #32425c;
 }
 
 /*первая строка навигации в футере в покое*/
 .footer-navigation-1 a {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: normal;
 	color: #f1f5f7;
-	background-color: #32425c;
 }
 
 /*первая строка навигации в футере при наведении*/
@@ -261,12 +237,7 @@ footer {
 
 /*вторая строка навигации в футере в покое*/
 .footer-navigation-2 a {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size:18px;
-	line-height:24px;
-	font-weight: normal;
 	color: #ffd180;
-	background-color: #32425c;
 }
 
 /*вторая строка навигации в футере при наведении*/
@@ -282,12 +253,7 @@ footer {
 /*телефон и адрес в футере*/
 .footer-address,
 .footer-tel {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: normal;
 	color: #f1f5f7;
-	background-color: #32425c;
 }
 
 /*цвет фона в нижней части футера*/
@@ -297,34 +263,25 @@ footer {
 
 /*стилизация копирайта*/
 .copyright {
-	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: normal;
 	color: #ffffff;
-	background-color: #293449;
 }
 
 /*обратная связь и  разработчик*/
 .feedback,
 .developed-by {
-	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: normal;
 	color: #ffffff;
-	background-color: #293449;
 }
 
 /*обратная связь и  разработчик*/
 .feedback-mail,
 .site {
-	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: normal;
 	color: #ffd180;
-	background-color: #293449;
 }
 
 /*почта и сайт при наведении*/
@@ -340,65 +297,46 @@ footer {
 }
 
 /*стилизация ссылок "подробнее о компании" и "напишите нам"*/
-.more,
-.help {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+.red-button {
 	color: #ffffff;
 	background: #ee3643;
+	text-transform:uppercase;
 }
 
 /*при наведении*/
-.more:hover,
-.help:hover {
+.red-button:hover {
 	background: #ca2c37;
 }
 
 /*при клике*/
-.more:active,
-.help:active {
+.red-button:active {
 	background: #ba2732;
 }
 
 /*стилизация страницы каталога*/
 .container h2 {
 	color: #32425c;
-	background: #f2f6f8;
-}
-
-/*фон для хлебных крошек*/
-.breadcrumbs {
-	background: #ffffff;
 }
 
 /*стилизация хлебных крошек*/
 .breadcrumbs a {
-	font-family: PT Sans, Arial, sans-serif;
-	font-size: 13px;
 	line-height: 18px;
-	font-weight: normal;
-  	color: #000000;
+	color:#000000;
 }
 
 /*стилизация критериев отбора в фильтре*/
  .filter-criterion {
- 	font-family: PT Sans, Arial, sans-serif;
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
-  	color: #000000;
   	text-transform: uppercase;
  }
 
 /*стилизация позиций фильтра*/
 .filter-option {
-	font-family: PT Sans, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	font-weight: normal;
 	text-transform: uppercase;
-  	color: #000000;
 }
 
 /*позиция фильтра заблокирована*/
@@ -419,7 +357,6 @@ footer {
 /*стилизация названия товаров*/
 .catalog-item h4,
 .catalog-item h3 {
-	font-family: PT Sans, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -428,7 +365,6 @@ footer {
 
 /*стилизация старой цены*/
 .old-price {
-	font-family: PT Sans, Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
@@ -438,17 +374,11 @@ footer {
 
  /*новая цена*/
 .price {
-	font-family: PT Sans, Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	color: #ffffff;
 	background: #ee3643;
-}
-
-/*фон для параграфа о перфораторах*/
-.perforator p {
-	background: #e5e5e5;
 }
 
 /*стилизация пагинации в покое*/
@@ -474,43 +404,278 @@ footer {
   background-color: #ee3643;
 }
 
-a + .product-buttons {
+/*прячу кнопки "купить"" и "в закладки"*/
+a.product-picture + .product-buttons {
 	display: none;
 }
-
-a:hover + .product-buttons {
+ /*показать кнопки "купить" и "в закладки"*/
+a.product-picture:hover + .product-buttons {
 	display: block;
 }
-.buy {
+
+/*общие стили для кнопок*/
+.button {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
-	background: #63a63e;
-	box-shadow: inset 0 -30px 0px -25px #367315;	
 }
 
+/*стили для "купить"*/
+.buy {
+	background: #63a63e;
+	box-shadow: inset 0 -30px 0px -25px #367315;	
+	text-transform:uppercase;
+}
+
+/*стили для "купить" в наведении*/
 .buy:hover {
 	background: #5fbb2d;
 }
 
+/*стили для "купить" при нажатии*/
 .buy:active {
 	background: #518534;
 	box-shadow: none;
 }
 
+/*стили для "в закладки"*/
 .marker {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
 	color: #32425c;
-	background: #ffffff;
 	border: 3px solid #63a63e;
+	text-transform:uppercase;
 }
+
+/*стили для "в закладки" при наведении*/
 .marker:hover {
 	border: 3px solid #32425c;
  }
 
+/*стили для "в закладки" при нажатии*/
  .marker:active {
  	opacity:0.3;
  }
+
+ /*сеточные стили*/
+
+/*обертка для блока справа от логотипа в шапке*/
+.main-header-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+ /*блок справа от логотипа в шапке*/
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*это контейнер для h1*/
+.main-title {
+	width: 200px;
+}
+
+/*это контейнер в шапке для h1, контактов и юзер-меню*/
+.header-container {
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*это блок меню*/
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	min-height: 60px;
+	flex-direction: row;
+	margin: 0;
+  	padding: 0;
+	align-items: center;
+}
+
+/*это блок адрес+номер телефона*/
+.header-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*стилизация двух колонок: о компании и контакты*/
+.index-columns {
+	display: flex;
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*обертка для основного содержания*/
+.index-wrapper {
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+}
+
+/*синий блок в шапке, который тянется на всю ширину*/
+.header-right-wrapper {
+	width: 100%;
+	min-height: 42px;
+	background-color: #293449;
+}
+
+/*блоки с заголовками популярные товары и производители*/
+.column-title {
+	display:flex;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	width: 940px;
+	background-color: #f9f5f0;
+	min-height: 89px;
+	margin-bottom: 20px;
+}
+
+/*блоки с логотипами брендов и позициями каталога*/
+.brands-logo,
+.catalog-list {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+  	padding: 0;
+  	width: 940px;
+  	margin-right: auto;
+	margin-left: auto;
+}
+
+/*доп свойство перенос для блока с логотипами*/
+.brands-logo {
+	flex-wrap: wrap;
+}
+
+/*обертки подвала*/
+ .footer-wrapper,
+ .lower-footer-wrapper {
+ 	width: 100%;
+ }
+
+/*цвет нижней обертки*/
+ .lower-footer-wrapper{
+ 	background-color: #293449;
+ }
+ 
+
+ .additionally,
+ .top-footer,
+ .lower-footer,
+ .catalog-title,
+ .perforator,
+ .breadcrumbs {
+ 	width: 940px;
+  	margin-right: auto;
+	margin-left: auto;
+ }
+ /*сетка подвала*/
+ .top-footer{
+ 	display: flex;
+ }
+ .top-footer-column {
+ 	display: flex;
+ 	flex-direction: column;
+ 	width: 225px;
+ }
+
+.top-footer-column-2{
+	display: flex;
+ 	flex-direction: column;
+}
+
+/* стилизация навигации в подвале*/
+ .footer-navigation-1,
+ .footer-navigation-2 {
+ 	display: flex;
+ 	margin: 0;
+  	padding: 0;
+  	justify-content: space-between;
+ }
+
+/*стилизация нижней части подвала*/
+ .lower-footer{
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+
+/*стилизация копирайта*/
+ .copyright-column{
+ 	width: 260px;
+ }
+
+/*стилизация обратной связи и разработки в футере*/
+ .feedback,
+ .developed-by{
+ 	width: 150px;
+ }
+
+/* стилизация заголовка каталога*/
+.catalog-title {
+	min-height: 89px;
+	background-color: #f2f6f8;
+
+}
+
+/*блок для главного содержания на странице*/
+.container {
+	background-color: #ffffff;
+	width: 100%;
+}
+
+/*обертка для каталога + фильтры*/
+.catalog-wrapper {
+	display: flex;
+	width: 940px;
+  	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+}
+
+/*блок с товарами на странице каталога*/
+.inner-catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+ 	margin: 0;
+	list-style: none;
+}
+
+/*стилизация товаров в каталоге*/
+.catalog-item{
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+/*обертка блока о перфораторах*/
+.perforator-wrapper {
+	width: 100%;
+	background-color: #f2f6f8;
+}
+
+/*обертка пагинации*/
+.pagination-wrapper {
+	width: 100%;
+}
+
+/*пагинация*/
+.pagination-list {
+	display: flex;
+	width: 940px;
+  	margin-right: auto;
+	margin-left: auto;
+}
