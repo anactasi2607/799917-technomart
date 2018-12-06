@@ -7,7 +7,7 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	color: #000000;
-	background-color: #f2f6f8;
+	background-color: #ffffff;
 }
 
 /*убираем подчеркивание ссылки*/
@@ -16,7 +16,7 @@ a {
 }
 
 /*общие стили для блока правее логотипа*/
-.header-right {
+.header-top {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
@@ -24,56 +24,55 @@ a {
 }
 
 /*определяю цвет текста для ссылок*/
-.header-right a {
+.header-top a {
 	color: #ffffff;
 }
 
 /*цвет фона для ссылки на оформление заказа*/
-.header-right a:last-child {
+.header-top a:last-child {
 	background-color: #63a63e;
 }
 
 /*цвет формы поиска*/
-.header-right input {
+.header-top input {
 	background-color: #293449;
 }
 
 /*цвет фона при наведении для поиска и ссылок*/
-.header-right a:hover,
-.header-right input:hover {
+.header-top a:hover,
+.header-top input:hover {
 	background-color: #212a3a;
 }
 
 /*цвет фона при наведении для ссылки на оформление заказа*/
-.header-right a:last-child:hover {
+.header-top a:last-child:hover {
 	background-color: #5fbb2d;
 }
 
 /*цвет фона для ссылок при нажатии*/
-.header-right a:active{
+.header-top a:active{
 	background-color: #161d29;
 }
 
 /*цвет фона для ссылки на оформление при нажатии*/
-.header-right a:last-child:active {
+.header-top a:last-child:active {
 	background-color: #518534;
 	opacity: 0.5;
 }
 
 /*цвет фона для поля поиска в фокусе и при нажатии*/
-.header-right input:focus {
+.header-top input:focus {
 	background-color: #ffffff;
 }
 
 /*правило для заголовка первого уровня*/
-.main-header h1,
-.main-title h1 {
+.main-title {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
-	background-color: #f1f5f7;
 	font-style: italic;
+	width: 200px;
 }
 
 /*правило для номера телефона*/
@@ -149,6 +148,7 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 	background-color: #32425c;
+	margin-bottom: 60px;
 }
 
 /*главная навигация при наведении*/
@@ -191,11 +191,6 @@ li {
 	color: #32425c;
 }
 
-/*цвет фона для секций белого цвета*/
-.white {
-	background-color: #ffffff;
-}
-
 /*правило для ссылок на компании-перевозчики*/
 .company a {
 	font-family: "Cuprum", Arial, sans-serif;
@@ -218,6 +213,7 @@ footer {
 	line-height: 24px;
 	font-weight: normal;
 	background-color: #32425c;
+	background-image: linear-gradient(to top, #293449 100px, #32425c 100px);
 }
 
 /*первая строка навигации в футере в покое*/
@@ -254,11 +250,6 @@ footer {
 .footer-address,
 .footer-tel {
 	color: #f1f5f7;
-}
-
-/*цвет фона в нижней части футера*/
-.lower-footer {
-	background: #293449;
 }
 
 /*стилизация копирайта*/
@@ -322,6 +313,9 @@ footer {
 .breadcrumbs a {
 	line-height: 18px;
 	color:#000000;
+	padding: 0;
+  	margin: 0;
+  	list-style: none;
 }
 
 /*стилизация критериев отбора в фильтре*/
@@ -459,32 +453,24 @@ a.product-picture:hover + .product-buttons {
  /*сеточные стили*/
 
 /*обертка для блока справа от логотипа в шапке*/
-.main-header-wrapper{
+.header-wrapper{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
 
 }
  /*блок справа от логотипа в шапке*/
-.header-right {
+.header-top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 940px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*это контейнер для h1*/
-.main-title {
-	width: 200px;
+	margin: 0px auto;
 }
 
 /*это контейнер в шапке для h1, контактов и юзер-меню*/
 .header-container {
 	display: flex;
-	width: 940px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -493,7 +479,6 @@ a.product-picture:hover + .product-buttons {
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
-	width: 940px;
 	min-height: 60px;
 	flex-direction: row;
 	margin: 0;
@@ -511,33 +496,19 @@ a.product-picture:hover + .product-buttons {
 /*стилизация двух колонок: о компании и контакты*/
 .index-columns {
 	display: flex;
-	width: 940px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 /*обертка для основного содержания*/
 .index-wrapper {
-	width: 100%;
 	display:flex;
 	flex-direction: column;
-}
-
-/*синий блок в шапке, который тянется на всю ширину*/
-.header-right-wrapper {
-	width: 100%;
-	min-height: 42px;
-	background-color: #293449;
 }
 
 /*блоки с заголовками популярные товары и производители*/
 .column-title {
 	display:flex;
 	align-items: center;
-	margin-right: auto;
-	margin-left: auto;
 	justify-content: space-between;
-	width: 940px;
 	background-color: #f9f5f0;
 	min-height: 89px;
 	margin-bottom: 20px;
@@ -550,9 +521,6 @@ a.product-picture:hover + .product-buttons {
 	flex-direction: row;
 	margin: 0;
   	padding: 0;
-  	width: 940px;
-  	margin-right: auto;
-	margin-left: auto;
 }
 
 /*доп свойство перенос для блока с логотипами*/
@@ -560,36 +528,21 @@ a.product-picture:hover + .product-buttons {
 	flex-wrap: wrap;
 }
 
-/*обертки подвала*/
- .footer-wrapper,
- .lower-footer-wrapper {
- 	width: 100%;
- }
-
-/*цвет нижней обертки*/
- .lower-footer-wrapper{
- 	background-color: #293449;
- }
+.advantages,
+.perforator {
+	background: #f5f8fa;
+}
  
-
- .additionally,
- .top-footer,
- .lower-footer,
- .catalog-title,
- .perforator,
- .breadcrumbs {
- 	width: 940px;
-  	margin-right: auto;
-	margin-left: auto;
- }
  /*сетка подвала*/
- .top-footer{
+ .top-footer,
+ .lower-footer{
  	display: flex;
+ 	justify-content: space-between;
  }
  .top-footer-column {
  	display: flex;
  	flex-direction: column;
- 	width: 225px;
+ 	width: 335px;
  }
 
 .top-footer-column-2{
@@ -604,12 +557,6 @@ a.product-picture:hover + .product-buttons {
  	margin: 0;
   	padding: 0;
   	justify-content: space-between;
- }
-
-/*стилизация нижней части подвала*/
- .lower-footer{
- 	display: flex;
- 	justify-content: space-between;
  }
 
 /*стилизация копирайта*/
@@ -632,16 +579,13 @@ a.product-picture:hover + .product-buttons {
 
 /*блок для главного содержания на странице*/
 .container {
-	background-color: #ffffff;
-	width: 100%;
+	width: 940px;
+	margin: 0 auto;
 }
 
 /*обертка для каталога + фильтры*/
 .catalog-wrapper {
 	display: flex;
-	width: 940px;
-  	margin-right: auto;
-	margin-left: auto;
 	justify-content: space-between;
 }
 
@@ -661,21 +605,11 @@ a.product-picture:hover + .product-buttons {
 	margin-right: 20px;
 }
 
-/*обертка блока о перфораторах*/
-.perforator-wrapper {
-	width: 100%;
-	background-color: #f2f6f8;
-}
-
-/*обертка пагинации*/
-.pagination-wrapper {
-	width: 100%;
-}
-
 /*пагинация*/
 .pagination-list {
 	display: flex;
-	width: 940px;
-  	margin-right: auto;
-	margin-left: auto;
+}
+
+.main-header {
+	background-image: linear-gradient(#293449 42px, #f3f7f9 42px);
 }
