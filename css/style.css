@@ -452,20 +452,11 @@ a.product-picture:hover + .product-buttons {
 
  /*сеточные стили*/
 
-/*обертка для блока справа от логотипа в шапке*/
-.header-wrapper{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-}
  /*блок справа от логотипа в шапке*/
 .header-top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 940px;
-	margin: 0px auto;
 }
 
 /*это контейнер в шапке для h1, контактов и юзер-меню*/
@@ -612,4 +603,5 @@ a.product-picture:hover + .product-buttons {
 
 .main-header {
 	background-image: linear-gradient(#293449 42px, #f3f7f9 42px);
+	padding-bottom: 1px;
 }
