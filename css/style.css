@@ -15,6 +15,39 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html { 
+box-sizing: border-box; 
+} 
+
+*, 
+*::before, 
+*::after { 
+box-sizing: inherit; 
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*общие стили для блока правее логотипа*/
 .header-top {
 	font-family: "Cuprum", Arial, sans-serif;
@@ -26,6 +59,26 @@ a {
 /*определяю цвет текста для ссылок*/
 .header-top a {
 	color: #ffffff;
+	display: block;
+	min-height: 40px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	width: 150px;
+	vertical-align: middle;
+}
+
+.header-contacts {
+	width:270px;
+}
+
+.user-navigation{
+	margin:	0;
+	padding: 0;
+	display: flex;
+}
+
+.user-navigation li{
+	display: inline-block;
 }
 
 /*цвет фона для ссылки на оформление заказа*/
@@ -36,6 +89,9 @@ a {
 /*цвет формы поиска*/
 .header-top input {
 	background-color: #293449;
+	min-height: 42px;
+	border: none;
+	width: 270px;
 }
 
 /*цвет фона при наведении для поиска и ссылок*/
@@ -72,7 +128,8 @@ a {
 	line-height: 23px;
 	color: #ee3643;
 	font-style: italic;
-	width: 200px;
+	width: 197px;
+
 }
 
 /*правило для номера телефона*/
@@ -83,6 +140,11 @@ a {
 	color: #ee3643;
 	background-color: #f1f5f7;
 	border: 3px solid #ffffff;
+	width: 270px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 70px;
 }
 
 /*правило для адреса*/
@@ -106,6 +168,7 @@ a {
 	line-height: 21px;
 	color: #000000;
 	background-color: #ffffff;
+	padding: 10px 25px 10px 25px;
 }
 
 /*войти,имя профиля и регистрация при наведении*/
@@ -170,11 +233,19 @@ li {
 /*цвет ссылок в глав.навигации*/
 .site-navigation a {
 	color: #ffffff;
+	min-height: 55px;
+	display: block;
+	vertical-align: middle;
+	padding: 20px 30px;
 }
 
-/*это внутренняя тень для пунктов меню*/
-.site-navigation li{
-	box-shadow: inset 0 -30px 0px -25px #293449;
+.brands li {
+	border: 1px solid #ebebeb;
+	margin-bottom: 20px;
+
+}
+.brands li:hover{
+	box-shadow: 0px 3px 20px 0px #abafb8;
 }
 
 /*прозрачность бренды при клике*/
@@ -189,6 +260,11 @@ li {
 	line-height: 30px;
 	font-weight: normal;
 	color: #32425c;
+	text-transform:uppercase;
+}
+
+.column-title .title {
+	margin: 30px;
 }
 
 /*правило для ссылок на компании-перевозчики*/
@@ -219,6 +295,9 @@ footer {
 /*первая строка навигации в футере в покое*/
 .footer-navigation-1 a {
 	color: #f1f5f7;
+	margin-left: 60px;
+
+
 }
 
 /*первая строка навигации в футере при наведении*/
@@ -234,6 +313,7 @@ footer {
 /*вторая строка навигации в футере в покое*/
 .footer-navigation-2 a {
 	color: #ffd180;
+	margin-left: 60px;
 }
 
 /*вторая строка навигации в футере при наведении*/
@@ -292,6 +372,10 @@ footer {
 	color: #ffffff;
 	background: #ee3643;
 	text-transform:uppercase;
+	display: inline-block;
+	padding: 12px 55px;
+	border-radius: 3px;
+	min-width: 255px;
 }
 
 /*при наведении*/
@@ -455,26 +539,30 @@ a.product-picture:hover + .product-buttons {
  /*блок справа от логотипа в шапке*/
 .header-top {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-start;
+
 }
 
 /*это контейнер в шапке для h1, контактов и юзер-меню*/
 .header-container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	padding-left: 55px;
 }
 
 /*это блок меню*/
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
 	min-height: 60px;
 	flex-direction: row;
 	margin: 0;
   	padding: 0;
 	align-items: center;
+	box-shadow: inset 0 -30px 0px -25px #293449;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /*это блок адрес+номер телефона*/
@@ -503,13 +591,13 @@ a.product-picture:hover + .product-buttons {
 	background-color: #f9f5f0;
 	min-height: 89px;
 	margin-bottom: 20px;
+
 }
 
 /*блоки с логотипами брендов и позициями каталога*/
 .brands-logo,
 .catalog-list {
 	display: flex;
-	flex-direction: row;
 	margin: 0;
   	padding: 0;
 }
@@ -517,7 +605,18 @@ a.product-picture:hover + .product-buttons {
 /*доп свойство перенос для блока с логотипами*/
 .brands-logo {
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
+.brands-logo li {
+	height: 145px; 
+}
+
+.brands-logo img {
+	width: 220px;
+	height: 145px;
+}
+
 
 .advantages,
 .perforator {
@@ -539,6 +638,7 @@ a.product-picture:hover + .product-buttons {
 .top-footer-column-2{
 	display: flex;
  	flex-direction: column;
+ 	align-items: flex-end;
 }
 
 /* стилизация навигации в подвале*/
@@ -548,6 +648,12 @@ a.product-picture:hover + .product-buttons {
  	margin: 0;
   	padding: 0;
   	justify-content: space-between;
+}
+
+ .footer-navigation-1 {
+ 	margin-top: 38px;
+ 	margin-bottom: 35px;
+
  }
 
 /*стилизация копирайта*/
@@ -604,4 +710,47 @@ a.product-picture:hover + .product-buttons {
 .main-header {
 	background-image: linear-gradient(#293449 42px, #f3f7f9 42px);
 	padding-bottom: 1px;
+	margin-bottom: 60px;
+}
+
+
+.user-navigation .user-in {
+	display: none;
+}
+
+.temporarily {
+	min-height: 410px;
+	background-color: #919c9f;
+	margin-bottom: 55px;
+}
+
+
+.wholly-header-top {
+	display: flex;
+}
+
+.column-title {
+	padding-right: 25px;
+}
+
+.about-us {
+	width: 540px;
+	margin-right: 100px;
+}
+
+
+.contacts {
+	width: 301px;
+}
+
+.index-columns .title {
+	color: #000000;
+}
+
+.footer-logo {
+	margin-bottom: 28px;
+}
+
+.top-footer {
+	margin-top: 85px;
 }

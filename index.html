@@ -10,17 +10,19 @@
   <body>
   	<header class="main-header">
       <div class="container">
-		    <div class="header-top">
+		    <div class="wholly-header-top">
           <a class="main-logo">
             <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
 		      </a>
-		      <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search" placeholder="Поиск:" id="search">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-		      </form>
-          <a href="#">Закладки:0</a>
-          <a href="#">Корзина:0</a>
-          <a href="#">Оформить заказ</a>
+          <div class="header-top">
+  		      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" placeholder="Поиск:" id="search">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+  		      </form>
+            <a href="#">Закладки:0</a>
+            <a href="#">Корзина:0</a>
+            <a href="#">Оформить заказ</a>
+          </div>
         </div>
         <div class="header-container container">
   		    <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -28,19 +30,19 @@
             <a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
     		    <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
-        <div>
-          <ul class="user-navigation">
-            <li class="user-link-big">
-  				    <a href="#">Войти</a>
-            </li>
-            <li class="user-link-big"><a href="#">Регистрация</a></li>
-            <li class="user-link-big"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->Равшан Джамшутович</a>
-      		  </li>
-      		  <li class="user-link-big"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
-      		  <li class="user-link-small"><a href="#">Мои заказы</a></li>
-      		  <li class="user-link-small"><a href="#">Личный кабинет</a></li>
-          </ul>
-        </div>
+          <div>
+            <ul class="user-navigation">
+              <li class="user-link-big user-out">
+    				    <a href="#">Войти</a>
+              </li>
+              <li class="user-link-big user-out"><a href="#">Регистрация</a></li>
+              <li class="user-link-big user-in"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->Равшан Джамшутович</a>
+        		  </li>
+        		  <li class="user-link-big user-in"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
+        		  <li class="user-link-small user-in"><a href="#">Мои заказы</a></li>
+        		  <li class="user-link-small user-in"><a href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
       </div>
   		<nav class="main-navigation">
   			<ul class="site-navigation container">
@@ -57,7 +59,8 @@
   	<main>
       <div class="container">
         <div class="index-wrapper">
-    		<!-- Здесь будет первый блок с картинками-->
+          <div class="temporarily">
+          </div>
     		  <section class="catalog">
             <div class="column-title">
               <h2 class="title">Популярные товары:</h2>
@@ -193,7 +196,7 @@
       </div>
         <div class="index-columns container">
   		    <section class="about-us">
-            <h2 class="title">Компания Техномарт</h2>
+            <h2 class="title">Компания «Техномарт»</h2>
             <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и <br>строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p>Мы можем доставить Ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями:</p>
             <ul class="company">
@@ -241,7 +244,7 @@
       <div class="container">
         <div class="top-footer">
           <div class="top-footer-column">
-    		    <a class="main-logo">
+    		    <a class="footer-logo">
     			    <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
     		    </a>
             <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
