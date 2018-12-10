@@ -54,6 +54,7 @@ input[type="radio"].visually-hidden {
 	font-size: 17px;
 	line-height: 18px;
 	color :#ffffff;
+
 }
 
 /*определяю цвет текста для ссылок*/
@@ -68,22 +69,79 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts {
-	width:270px;
+	width: 270px;
 }
 
-.user-navigation{
-	margin:	0;
-	padding: 0;
-	display: flex;
-}
-
-.user-navigation li{
+.user-navigation li {
 	display: inline-block;
+}
+
+.user-navigation a {
+	display: block;
+}
+
+.user-navigation {
+	list-style: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+.header-top a:nth-last-child(2) {
+	position: relative;
+	padding-left: 50px;
+}
+ 
+.header-top a:nth-last-child(2)::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 13px;
+	left: 24px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-cart.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ 	opacity: 0.3;
+}
+
+.header-top a:nth-last-child(2):hover::before {
+	opacity: 1;
+}
+
+.header-top a:nth-last-child(2):active::before {
+	opacity: 0.5;
+}
+
+.header-top a:nth-last-child(3) {
+	position: relative;
+	padding-left: 43px;
+}
+ 
+.header-top a:nth-last-child(3)::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 13px;
+	left: 13px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-bookmark.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ 	opacity: 0.3;
+}
+
+.header-top a:nth-last-child(3):hover::before {
+	opacity: 1;
+}
+
+.header-top a:nth-last-child(3):active::before {
+	opacity: 0.5;
 }
 
 /*цвет фона для ссылки на оформление заказа*/
 .header-top a:last-child {
 	background-color: #63a63e;
+	padding-left: 20px;
 }
 
 /*цвет формы поиска*/
@@ -91,7 +149,30 @@ input[type="radio"].visually-hidden {
 	background-color: #293449;
 	min-height: 42px;
 	border: none;
-	width: 270px;
+	width: 210px;
+}
+
+.tel {
+	position: relative;
+	padding-left: 75px;
+}
+
+.tel::before {
+	content: "";
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	top: 11px;
+	left: 13px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-phone.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ 	opacity: 0.3;
+}
+
+.search svg {
+	margin-left: 18px;
+	margin-right: 18px;
 }
 
 /*цвет фона при наведении для поиска и ссылок*/
@@ -128,8 +209,11 @@ input[type="radio"].visually-hidden {
 	line-height: 23px;
 	color: #ee3643;
 	font-style: italic;
-	width: 197px;
-
+	width: 200px;
+	margin: 0px;
+	margin-right: 67px;
+	margin-top: 5px;
+	padding-bottom: 41px;
 }
 
 /*правило для номера телефона*/
@@ -182,6 +266,10 @@ a {
 	opacity: 0.5;
 }
 
+.login-link:hover path {
+	fill: #32425c;
+}
+
 /*заказы и личный кабинет в покое*/
 .user-link-small a {
 	font-family: "Cuprum", Arial, sans-serif;
@@ -211,7 +299,7 @@ a {
 	font-weight: normal;
 	color: #ffffff;
 	background-color: #32425c;
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 }
 
 /*главная навигация при наведении*/
@@ -260,7 +348,7 @@ li {
 	line-height: 30px;
 	font-weight: normal;
 	color: #32425c;
-	text-transform:uppercase;
+	text-transform: uppercase;
 }
 
 .column-title .title {
@@ -330,6 +418,7 @@ footer {
 .footer-address,
 .footer-tel {
 	color: #f1f5f7;
+	margin: 0;
 }
 
 /*стилизация копирайта*/
@@ -337,6 +426,8 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+	margin: 0;
+
 }
 
 /*обратная связь и  разработчик*/
@@ -345,6 +436,10 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+}
+
+.feedback{
+	margin-right: 10px;
 }
 
 /*обратная связь и  разработчик*/
@@ -371,7 +466,7 @@ footer {
 .red-button {
 	color: #ffffff;
 	background: #ee3643;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	display: inline-block;
 	padding: 12px 55px;
 	border-radius: 3px;
@@ -432,33 +527,6 @@ footer {
 	box-shadow: 0px 3px 20px 0px #abafb8;
 }
 
-/*стилизация названия товаров*/
-.catalog-item h4,
-.catalog-item h3 {
-	font-size: 18px;
-	line-height: 20px;
-	font-weight: bold;
-	color: #000000;
-}
-
-/*стилизация старой цены*/
-.old-price {
-	font-size: 17px;
-	line-height: 18px;
-	font-weight: bold;
-	color: #999999;
-	text-decoration: line-through;
-}
-
- /*новая цена*/
-.price {
-	font-size: 17px;
-	line-height: 18px;
-	font-weight: bold;
-	color: #ffffff;
-	background: #ee3643;
-}
-
 /*стилизация пагинации в покое*/
 .pagination-item a {
 	border: 1px solid #e5e5e5;
@@ -482,14 +550,6 @@ footer {
   background-color: #ee3643;
 }
 
-/*прячу кнопки "купить"" и "в закладки"*/
-a.product-picture + .product-buttons {
-	display: none;
-}
- /*показать кнопки "купить" и "в закладки"*/
-a.product-picture:hover + .product-buttons {
-	display: block;
-}
 
 /*общие стили для кнопок*/
 .button {
@@ -499,40 +559,7 @@ a.product-picture:hover + .product-buttons {
 	color: #ffffff;
 }
 
-/*стили для "купить"*/
-.buy {
-	background: #63a63e;
-	box-shadow: inset 0 -30px 0px -25px #367315;	
-	text-transform:uppercase;
-}
 
-/*стили для "купить" в наведении*/
-.buy:hover {
-	background: #5fbb2d;
-}
-
-/*стили для "купить" при нажатии*/
-.buy:active {
-	background: #518534;
-	box-shadow: none;
-}
-
-/*стили для "в закладки"*/
-.marker {
-	color: #32425c;
-	border: 3px solid #63a63e;
-	text-transform:uppercase;
-}
-
-/*стили для "в закладки" при наведении*/
-.marker:hover {
-	border: 3px solid #32425c;
- }
-
-/*стили для "в закладки" при нажатии*/
- .marker:active {
- 	opacity:0.3;
- }
 
  /*сеточные стили*/
 
@@ -540,7 +567,6 @@ a.product-picture:hover + .product-buttons {
 .header-top {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: flex-start;
 
 }
@@ -548,8 +574,7 @@ a.product-picture:hover + .product-buttons {
 /*это контейнер в шапке для h1, контактов и юзер-меню*/
 .header-container {
 	display: flex;
-	align-items: center;
-	padding-left: 55px;
+	padding-left: 51px;
 }
 
 /*это блок меню*/
@@ -570,22 +595,31 @@ a.product-picture:hover + .product-buttons {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-right: 69px;
 }
 
 /*стилизация двух колонок: о компании и контакты*/
 .index-columns {
 	display: flex;
+	justify-content: space-between;
+	align-content: stretch;
+	padding-top: 40px;
+	padding-bottom: 85px;
+}
+
+.index-columns p {
+	margin-bottom: 25px;
 }
 
 /*обертка для основного содержания*/
 .index-wrapper {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
 /*блоки с заголовками популярные товары и производители*/
 .column-title {
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background-color: #f9f5f0;
@@ -595,8 +629,7 @@ a.product-picture:hover + .product-buttons {
 }
 
 /*блоки с логотипами брендов и позициями каталога*/
-.brands-logo,
-.catalog-list {
+.brands-logo {
 	display: flex;
 	margin: 0;
   	padding: 0;
@@ -606,10 +639,6 @@ a.product-picture:hover + .product-buttons {
 .brands-logo {
 	flex-wrap: wrap;
 	justify-content: space-between;
-}
-
-.brands-logo li {
-	height: 145px; 
 }
 
 .brands-logo img {
@@ -627,8 +656,12 @@ a.product-picture:hover + .product-buttons {
  .top-footer,
  .lower-footer{
  	display: flex;
- 	justify-content: space-between;
  }
+
+.top-footer {
+	margin-bottom: 80px;
+}
+
  .top-footer-column {
  	display: flex;
  	flex-direction: column;
@@ -657,13 +690,15 @@ a.product-picture:hover + .product-buttons {
  }
 
 /*стилизация копирайта*/
- .copyright-column{
+ .copyright-column {
  	width: 260px;
+ 	padding-top: 7px;
+ 	margin-right: 127px;
  }
 
 /*стилизация обратной связи и разработки в футере*/
  .feedback,
- .developed-by{
+ .developed-by {
  	width: 150px;
  }
 
@@ -700,6 +735,7 @@ a.product-picture:hover + .product-buttons {
 	width: 220px;
 	margin-bottom: 20px;
 	margin-right: 20px;
+	font-size: 16px;
 }
 
 /*пагинация*/
@@ -727,6 +763,7 @@ a.product-picture:hover + .product-buttons {
 
 .wholly-header-top {
 	display: flex;
+	margin-bottom: 40px;
 }
 
 .column-title {
@@ -734,13 +771,14 @@ a.product-picture:hover + .product-buttons {
 }
 
 .about-us {
-	width: 540px;
+	width: 535px;
 	margin-right: 100px;
 }
 
 
 .contacts {
 	width: 301px;
+	min-height: 319px;
 }
 
 .index-columns .title {
@@ -751,6 +789,228 @@ a.product-picture:hover + .product-buttons {
 	margin-bottom: 28px;
 }
 
-.top-footer {
-	margin-top: 85px;
+.main-logo,
+.footer-logo,
+.brands-logo a {
+	line-height: 0px;
+	display: block;
+}
+
+/*стилизация карточки товара*/ 
+
+.catalog-list {
+    width: 940px;
+    margin: 20px auto;
+    font-size: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.catalog-item {
+	position: relative;
+    display: inline-block;
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.catalog .catalog-item:last-child {
+	margin-right: 0;
+}
+
+.catalog-item .image {
+    width: 218px;
+    height: 168px;
+}
+.catalog-item .image img {
+    max-width: 100%;
+}
+
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+.catalog-item .flag-new {
+    background: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/new.png") no-repeat 0 0;
+}
+
+.product-buttons {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 216px;
+    height: 170px;
+    padding: 40px 0;
+    background-color: rgb(255,255,255);
+    z-index: 10;
+    display: none;
+}
+
+.catalog-item:hover .product-buttons {
+	display: block;
+}
+
+.product-buttons .buy,
+.product-buttons .marker {
+	display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315; 
+    background-color: #63a63e;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;    
+    border-radius: 3px;
+
+}
+
+.product-buttons .marker {
+	color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+
+.catalog-item h3 {
+	min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+}
+
+
+/*стилизация названия товаров*/
+.catalog-item h4,
+.catalog-item h3 {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/*стилизация старой цены*/
+.old-price {
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: line-through;
+	min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ /*новая цена*/
+.price {
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	position: relative;
+    width: 141px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+
+.catalog-item .price:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 19px solid white;
+    border-left-color: #ee3643;
+}
+
+/*стили для "купить" в наведении*/
+.buy:hover {
+	background-color: #5fbb2d;
+	border-color: #5fbb2d;
+	border-bottom-color:#367315;
+}
+
+/*стили для "купить" при нажатии*/
+.buy:active {
+	background: #518534;
+	box-shadow: none;
+	border-color: #518534;
+}
+
+/*стили для "в закладки"*/
+.marker {
+	color: #32425c;
+	border: 3px solid #63a63e;
+	text-transform: uppercase;
+}
+
+/*стили для "в закладки" при наведении*/
+.marker:hover {
+	border: 3px solid #32425c;
+ }
+
+/*стили для "в закладки" при нажатии*/
+ .marker:active {
+ 	opacity: 0.3;
+ }
+
+ .map {
+ 	width: 300px; 
+ 	height: 157px;
+ 	margin: 0;
+ 	margin-bottom: 40px;
+ 	margin-top: 35px;
+ }
+
+ .contacts .red-button {
+ 	width: 100%;
+ }
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+  display: flex;
+  width: 135px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  margin-right: 120px;
+}
+
+.social-button {
+  width: 44px;
+  height: 44px;
+  background-color: #212a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 3px;
+ }
+
+.social-button:hover,
+.social-button:active {
+  background-color: #ee3643;
 }
