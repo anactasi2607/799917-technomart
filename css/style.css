@@ -150,6 +150,7 @@ input[type="radio"].visually-hidden {
 	min-height: 42px;
 	border: none;
 	width: 210px;
+	padding-left: 50px;
 }
 
 .tel {
@@ -170,10 +171,6 @@ input[type="radio"].visually-hidden {
  	opacity: 0.3;
 }
 
-.search svg {
-	margin-left: 18px;
-	margin-right: 18px;
-}
 
 /*цвет фона при наведении для поиска и ссылок*/
 .header-top a:hover,
@@ -495,6 +492,7 @@ footer {
 	padding: 0;
   	margin: 0;
   	list-style: none;
+  	text-transform: uppercase;
 }
 
 /*стилизация критериев отбора в фильтре*/
@@ -529,9 +527,12 @@ footer {
 
 /*стилизация пагинации в покое*/
 .pagination-item a {
+	display: block;
 	border: 1px solid #e5e5e5;
 	color: #000000;
 	text-transform: uppercase;
+	padding: 6px 14px 8px 16px;
+	border-radius: 3px;
 }
 
 /*пагинация в наведении*/
@@ -706,6 +707,8 @@ footer {
 .catalog-title {
 	min-height: 89px;
 	background-color: #f2f6f8;
+	padding-top: 30px;
+	padding-left: 28px;
 
 }
 
@@ -719,6 +722,7 @@ footer {
 .catalog-wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 60px;
 }
 
 /*блок с товарами на странице каталога*/
@@ -728,6 +732,8 @@ footer {
 	padding: 0;
  	margin: 0;
 	list-style: none;
+	width: 700px;
+	justify-content: space-between;
 }
 
 /*стилизация товаров в каталоге*/
@@ -741,6 +747,14 @@ footer {
 /*пагинация*/
 .pagination-list {
 	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pagination-item {
+  margin-right: 10px;
 }
 
 .main-header {
@@ -752,6 +766,11 @@ footer {
 
 .user-navigation .user-in {
 	display: none;
+}
+
+.user-navigation .user-out {
+	display: inline-block;
+
 }
 
 .temporarily {
@@ -1013,4 +1032,254 @@ footer {
 .social-button:hover,
 .social-button:active {
   background-color: #ee3643;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs li {
+	position: relative;
+	margin-right: 45px;
+}
+
+.breadcrumbs li:first-child::after {
+	content: "";
+  	position: absolute;
+  	width: 8px;
+	height: 12px;
+	top: 5px;
+	left: 30px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ }
+
+ .breadcrumbs li:nth-child(2):after {
+	content: "";
+  	position: absolute;
+  	width: 8px;
+	height: 12px;
+	top: 5px;
+	left: 65px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ }
+
+ .breadcrumbs li:nth-child(3):after {
+	content: "";
+  	position: absolute;
+  	width: 8px;
+	height: 12px;
+	top: 5px;
+	left: 90px;
+	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ }
+
+ .inner-page {
+ 	margin-bottom: 20px;
+ }
+
+ .filters h3 {
+ 	background-color: #f7f3ec;
+ 	width: 220px;
+ 	min-height: 38px;
+ 	margin: 0;
+ 	text-transform: uppercase;
+ 	font-weight: normal;
+ 	padding-top: 7px;
+ 	padding-left: 18px;
+ 	font-size: 13px;
+ 	margin-bottom: 12px;
+
+ }
+
+.inner-catalog-list li:nth-of-type(3n){
+    margin-right:0;
+
+}
+
+/**/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  background-color: #f7f3ec;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d9dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls input {
+  width: 95px;
+  min-height: 38px;
+  padding: 8px 10px;
+  display: inline-block;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.price-controls input:first-child {
+	margin-right: 8px;
+}
+
+.price-controls input:last-child {
+	margin-left: 8px;
+}
+
+.perforator .container {
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
+
+.perforator p{
+	margin: 0px;
+}
+
+.top-filter,
+.bottom-filter {
+	padding: 0;
+  	margin: 0;
+  	border-top: 1px solid #e5e5e5;
+  	padding-top: 17px;
+}
+
+.bottom-filter {
+	margin-bottom: 64px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  }
+
+ .filter-option {
+  margin-bottom: 19px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 26px;
+  height: 23px;
+  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+  
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/radio-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-button {
+	width: 140px;
+	text-transform: uppercase;
+	padding: 12px 38px;
+	border:1px solid #e5e5e5;
+	background-color: #ffffff;
 }
