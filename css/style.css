@@ -98,7 +98,7 @@ input[type="radio"].visually-hidden {
 	height: 15px;
 	top: 13px;
 	left: 24px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-cart.svg");
+	background-image: url("../img/icon-cart.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  	opacity: 0.3;
@@ -124,7 +124,7 @@ input[type="radio"].visually-hidden {
 	height: 15px;
 	top: 13px;
 	left: 13px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-bookmark.svg");
+	background-image: url("../img/icon-bookmark.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  	opacity: 0.3;
@@ -165,7 +165,7 @@ input[type="radio"].visually-hidden {
 	height: 19px;
 	top: 11px;
 	left: 13px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-phone.svg");
+	background-image: url("../img/icon-phone.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  	opacity: 0.3;
@@ -859,7 +859,7 @@ footer {
     z-index: 20;
 }
 .catalog-item .flag-new {
-    background: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/new.png") no-repeat 0 0;
+    background: url("../img/new.png") no-repeat 0 0;
 }
 
 .product-buttons {
@@ -1055,7 +1055,7 @@ footer {
 	height: 12px;
 	top: 5px;
 	left: 30px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  }
@@ -1067,7 +1067,7 @@ footer {
 	height: 12px;
 	top: 5px;
 	left: 65px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  }
@@ -1079,7 +1079,7 @@ footer {
 	height: 12px;
 	top: 5px;
 	left: 90px;
-	background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/icon-right-small.svg");
+	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
  }
@@ -1234,7 +1234,7 @@ footer {
   top: -3px;
   width: 23px;
   height: 23px;
-  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1246,7 +1246,7 @@ footer {
   top: -3px;
   width: 26px;
   height: 23px;
-  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
   
@@ -1259,7 +1259,7 @@ footer {
   top: -3px;
   width: 25px;
   height: 25px;
-  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1271,7 +1271,7 @@ footer {
   top: -3px;
   width: 25px;
   height: 25px;
-  background-image: url("C:/Users/Анастасия/Documents/GitHub/799917-technomart/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
