@@ -8,20 +8,23 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header inner-page">
+    <header class="main-header">
       <div class="container">
-        <div class="wholly-header-top">
-          <a class="main-logo">
-            <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
-          </a>
-          <div class="header-top">
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search" placeholder="Поиск:" id="search">
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-            </form>
-            <a href="#">Закладки: 0</a>
-            <a href="#">Корзина: 0</a>
-            <a href="#">Оформить заказ</a>
+        <div class="header-top-wrapper">
+          <div class="wholly-header-top container">
+            <a href="index.html" class="main-logo">
+              ТЕХНОМАРТ
+            </a>
+            <div class="header-top">
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                <input class="search-text" type="search" name="search" placeholder="Поиск:" id="search">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+              </form>
+              <a href="#">Закладки: <span>0</span></a>
+              <a href="#">Корзина: <span>10</span></a>
+              <a href="#">Оформить заказ</a>
+            </div>
           </div>
         </div>
         <div class="header-container container">
@@ -30,24 +33,21 @@
             <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
-          <div>
-            <ul class="user-navigation">
-              <li class="user-link-big user-out">
-                <a class="login-link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
-                  Войти
-                </a>
-              </li>
-              <li class="user-link-big user-out"><a href="#">Регистрация</a></li>
-              <li class="user-link-big user-in"><a href="#"><span class="visually-hidden">Вход в профайл</span><!--Здесь будет фоновое изображение иконки входа-->Равшан Джамшутович</a>
-              <a href="#"><span class="visually-hidden">Выход</span>
-              </li>
-              <li class="user-link-big user-in"><a href="#"><span class="visually-hidden">Выход</span><!--Здесь будет фоновое изображение иконки выхода--></a></li>
-              <li class="user-link-small user-in"><a href="#">Мои заказы</a></li>
-              <li class="user-link-small user-in"><a href="#">Личный кабинет</a></li>
-            </ul>
-          </div>
-      </div>
+          <ul class="user-navigation inner-user-navigation">
+            <li class="user-link-big user-out">
+              <a class="login-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                Войти
+              </a>
+            </li>
+            <li class="user-link-big user-out"><a class="check-in" href="#">Регистрация</a></li>
+            <li class="user-link-big user-in"><a href="#"><span class="visually-hidden">Вход в профайл</span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+            Равшан Джамшутович</a><a href="#"><span class="visually-hidden">Выход</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg></a>
+            </li>
+            <li class="user-link-small user-in"><a href="#">Мои заказы</a></li>
+            <li class="user-link-small user-in"><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
       <nav class="main-navigation">
         <ul class="site-navigation container">
           <li><a href="index.html">Главная</a></li>
@@ -60,7 +60,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="inner">
       <div class="container">
         <ul class="breadcrumbs">
           <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg></a></li>
@@ -327,8 +327,8 @@
           <section class="modal cart">
             <h2 class="visually-hidden">Статус товара</h2>
             <p>Товар добавлен в корзину!</p>
-            <a href="#" class="button">Оформить заказ</a>
-            <a href="#" class="button">Продолжить покупки</a>
+            <a href="#" class="button red-button">Оформить заказ</a>
+            <a href="#" class="button white-button">Продолжить покупки</a>
             <button class="modal-close" type="button">Закрыть</button>
           </section>
         </section>
@@ -344,8 +344,8 @@
       <div class="container">
         <div class="top-footer">
           <div class="top-footer-column">
-            <a class="footer-logo">
-              <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
+            <a href="index.html" class="footer-logo">
+              ТЕХНОМАРТ
             </a>
             <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
             <a class="footer-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
