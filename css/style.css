@@ -32,7 +32,8 @@ html {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+label.visually-hidden {
   	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -1330,6 +1331,11 @@ footer {
 }
 
 .filter-input-checkbox + label:hover::before {
+	background-image: url("../img/checkbox-off-active.svg");
+}
+
+.filter-input-checkbox + label:disabled::before {
+	opacity: 0.3;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1348,6 +1354,11 @@ footer {
 	background-image: url("../img/checkbox-on-active.svg");
 }
 
+.filter-input-checkbox + label:disabled::before {
+	opacity: 0.3;
+}
+
+
 .filter-input-radio + label::before {
 	content: "";
 	position: absolute;
@@ -1360,7 +1371,15 @@ footer {
 	background-position: 0 0;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio + label:hover::before {
+	background-image: url("../img/radio-off-active.svg");
+}
+
+.filter-input-radio + label:disabled::before {
+	opacity: 0.3;
+}
+
+.filter-input-radio:checked + label::before {
 	content: "";
 	position: absolute;
 	left: -36px;
@@ -1370,6 +1389,14 @@ footer {
 	background-image: url("../img/radio-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.filter-input-radio:checked + label:hover::before {
+	background-image: url("../img/radio-on-active.svg");
+}
+
+.filter-input-radio:checked + label:disabled::before {
+	opacity: 0.3;
 }
 
 .filter-button {
@@ -1579,12 +1606,6 @@ footer {
   	margin-top: -200px;
   	margin-left: -470px;
   	box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
-}
-
-/*в IE при нажатии на поле поиска появлялся лейбл, несмотря на visualli, спрятала*/
-.search label {
-	line-height: 0px;
-	font-size: 0px;
 }
 
 .user-out {
