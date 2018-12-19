@@ -77,10 +77,15 @@ label.visually-hidden {
 }
 
 .user-navigation {
-	display: inline-block;
+	display: flex;
 	list-style: none;
   	margin: 0;
+  	padding: 0;
+  	width: 299px;
+    flex-wrap: wrap;
 }
+
+.user-navigation .
 
 .header-top a:nth-last-child(2) {
 	position: relative;
@@ -207,7 +212,7 @@ label.visually-hidden {
 	font-style: italic;
 	width: 200px;
 	margin: 0px;
-	margin-right: 67px;
+	margin-right: 8px;
 	margin-top: 4px;
 	padding-bottom: 40px;
 }
@@ -305,12 +310,12 @@ a {
 }
 
 /*главная навигация при наведении*/
-.main-navigation li:hover {
+.main-navigation a:hover {
 	background-color: #293449;
 }
 
 /*главная навигация при клике*/
-.main-navigation li:active {
+.main-navigation a:active {
 	background-color: #1d2739;
 	opacity: 0.5;
 }
@@ -323,9 +328,9 @@ li {
 /*цвет ссылок в глав.навигации*/
 .site-navigation a {
 	color: #ffffff;
-	min-height: 55px;
+	min-height: 60px;
 	display: block;
-	padding: 17px 30px 17px 31px;
+	padding: 20px 30px 17px 31px;
 }
 
 .brands li {
@@ -411,7 +416,7 @@ footer {
 
 /*первая строка навигации в футере при наведении*/
 .footer-navigation-1 a:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid white;
 }
 
 /*первая строка навигации в футере при клике*/
@@ -427,7 +432,7 @@ footer {
 
 /*вторая строка навигации в футере при наведении*/
 .footer-navigation-2 a:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid #ffd180;
 }
 
 /*вторая строка навигации в футере при клике*/
@@ -599,6 +604,7 @@ footer {
 .header-container {
 	display: flex;
 	padding-left: 52px;
+	justify-content: space-between;
 }
 
 /*это блок меню*/
@@ -821,7 +827,7 @@ footer {
 
 .check-in {
 	padding-right: 25px;
-	padding-left: 25px;
+	padding-left: 23px;
 }
 
 
@@ -1234,6 +1240,12 @@ footer {
 	background: #00ca74;
 }
 
+.scale .bar {
+	margin-left: 0%; 
+	width: 80%
+
+}
+
 .range-controls .toggle {
 	position: absolute;
 	top: 31px;
@@ -1331,7 +1343,7 @@ footer {
 }
 
 .filter-input-checkbox + label:hover::before {
-	background-image: url("../img/checkbox-off-active.svg");
+	background-image: url("../img/checkbox-off-hover.svg");
 }
 
 .filter-input-checkbox + label:disabled::before {
@@ -1351,7 +1363,7 @@ footer {
 }
 
 .filter-input-checkbox:checked + label:hover::before {
-	background-image: url("../img/checkbox-on-active.svg");
+	background-image: url("../img/checkbox-on-hover.svg");
 }
 
 .filter-input-checkbox + label:disabled::before {
@@ -1372,7 +1384,7 @@ footer {
 }
 
 .filter-input-radio + label:hover::before {
-	background-image: url("../img/radio-off-active.svg");
+	background-image: url("../img/radio-off-hover.svg");
 }
 
 .filter-input-radio + label:disabled::before {
@@ -1392,7 +1404,7 @@ footer {
 }
 
 .filter-input-radio:checked + label:hover::before {
-	background-image: url("../img/radio-on-active.svg");
+	background-image: url("../img/radio-on-hover.svg");
 }
 
 .filter-input-radio:checked + label:disabled::before {
@@ -1561,26 +1573,76 @@ footer {
     margin-bottom: 14px;
     padding: 0px 15px;
 }
+
+
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-close {
 	position: absolute;
-	top: 0;
-	right: -34px;
+	top: 10px;
+	right: 10px;
 	width: 21px;
 	height: 21px;
 	font-size: 0;
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
+	z-index: 3;
+
 }
 .modal-close::before,
 .modal-close::after {
 	content: "";
 	position: absolute;
-	top: 17px;
-	right: 40px;
+	top: 8px;
+	right: -3px;
 	width: 27px;
 	height: 4px;
 	background-color: #ee3643;
+
 }
 
 .modal-close::before {
@@ -1606,6 +1668,26 @@ footer {
   	margin-top: -200px;
   	margin-left: -470px;
   	box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map img{
+position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .user-out {
