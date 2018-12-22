@@ -68,7 +68,7 @@ label.visually-hidden {
 
 .header-contacts {
 	width: 270px;
-	padding-top: 15px;
+	padding-top: 12px;
 }
 
 
@@ -83,9 +83,12 @@ label.visually-hidden {
   	padding: 0;
   	width: 299px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-.user-navigation .
+.user-navigation li:nth-of-child(3) a:first-child {
+	padding-left: 50px;
+}
 
 .header-top a:nth-last-child(2) {
 	position: relative;
@@ -152,6 +155,7 @@ label.visually-hidden {
 	border: none;
 	width: 210px;
 	padding-left: 50px;
+	cursor: pointer;
 }
 
 .tel {
@@ -212,9 +216,10 @@ label.visually-hidden {
 	font-style: italic;
 	width: 200px;
 	margin: 0px;
-	margin-right: 8px;
-	margin-top: 4px;
+	margin-right: 16px;
+	margin-top: 2px;
 	padding-bottom: 40px;
+	user-select: none;
 }
 
 /*правило для номера телефона*/
@@ -227,8 +232,8 @@ label.visually-hidden {
 	border: 3px solid #ffffff;
 	width: 270px;
 	padding-top: 10px;
-	padding-bottom: 7px;
-	padding-right: 50px;
+	padding-bottom: 5px;
+	padding-right: 52px;
 	padding-left: 71px;
 	margin-bottom: 3px;
 	white-space: nowrap;
@@ -298,6 +303,48 @@ a {
 	opacity: 0.5;
 }
 
+.output-profile {
+	padding-left: 47px;
+	padding: 0px;
+}
+
+.entrance-profile {
+	padding-left: 45px;
+	padding-right: 68px;
+}
+
+.entrance-profile svg {
+	top: 12px;
+    left: 12px;
+    position: absolute;
+}
+
+.output-profile svg {
+	position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.orders {
+	margin-right: 31px;
+}
+
+.profile {
+	margin-right: 72px;
+	position: relative;
+}
+
+.profile::before {
+	content: "";
+	position: absolute;
+	border:2px solid #32425c;
+	width: 4px;
+	height: 5px;
+	border-radius: 50%;
+	color: #32425c;
+	top: 6px;
+    left: -17px;
+}
 /*правило для главной навигации*/
 .main-navigation {
 	font-family: "Cuprum", Arial, sans-serif;
@@ -360,6 +407,7 @@ li {
 	font-weight: normal;
 	color: #32425c;
 	text-transform: uppercase;
+	user-select: none;
 }
 
 /*правило для ссылок на компании-перевозчики*/
@@ -405,7 +453,7 @@ footer {
 	line-height: 24px;
 	font-weight: normal;
 	background-color: #32425c;
-	background-image: linear-gradient(to top, #293449 100px, #32425c 100px);
+	background-image: linear-gradient(to top, #293449 90px, #32425c 90px);
 }
 
 /*первая строка навигации в футере в покое*/
@@ -454,6 +502,7 @@ footer {
 	line-height: 18px;
 	color: #ffffff;
 	margin: 0;
+	user-select: none;
 
 }
 
@@ -463,6 +512,9 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+	user-select: none;
+	width: 150px;
+ 	margin-top: 9px;
 }
 
 .feedback{
@@ -620,11 +672,6 @@ footer {
 	padding-right: 22px;
 }
 
-/*это блок адрес+номер телефона*/
-.header-contacts {
-	display: inline-block;
-}
-
 /*стилизация двух колонок: о компании и контакты*/
 .index-columns {
 	display: flex;
@@ -653,6 +700,7 @@ footer {
 	margin-bottom: 20px;
 	justify-content: space-between;
 	padding-right: 23px;
+	user-select: none;
 }
 
 /*блоки с логотипами брендов и позициями каталога*/
@@ -723,15 +771,12 @@ footer {
 /*стилизация копирайта*/
  .copyright-column {
  	width: 260px;
- 	padding-top: 7px;
- 	margin-right: 140px;
+ 	padding-top: 9px;
+    margin-right: 142px;
  }
 
-/*стилизация обратной связи и разработки в футере*/
- .feedback,
  .developed-by {
- 	width: 150px;
- 	margin-top: 5px;
+ 	padding-left: 34px;
  }
 
 /* стилизация заголовка каталога*/
@@ -740,6 +785,8 @@ footer {
 	background-color: #f2f6f8;
 	padding-top: 30px;
 	padding-left: 28px;
+	margin: 0;
+	margin-bottom: 20px;
 
 }
 
@@ -769,10 +816,11 @@ footer {
 
 /*стилизация товаров в каталоге*/
 .catalog-item{
-	width: 220px;
+	width: 218px;
 	margin-bottom: 20px;
 	margin-right: 20px;
 	font-size: 16px;
+	text-align: center;
 }
 
 /*пагинация*/
@@ -840,7 +888,7 @@ footer {
 
 .wholly-header-top {
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
 }
 
 
@@ -871,6 +919,8 @@ footer {
 	box-shadow: inset 0 -30px 0px -25px #b52933;
 	padding: 18px 41px 26px 42px;
 	margin-bottom: 28px;
+	user-select: none;
+	margin-right: 111px;
 }
 
 .footer-logo:hover {
@@ -899,21 +949,14 @@ footer {
     justify-content: space-between;
 }
 
-.catalog-item {
-	position: relative;
-    display: inline-block;
-    width: 218px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+
 
 .catalog .catalog-item:last-child {
 	margin-right: 0;
 }
 
 .catalog-item .image {
-    width: 218px;
+    width: 217px;
     height: 168px;
 }
 .catalog-item .image img {
@@ -946,8 +989,12 @@ footer {
     display: none;
 }
 
-.catalog-item:hover .product-buttons {
+.catalog-item article:hover .product-buttons {
 	display: block;
+}
+
+.catalog-item article {
+	position: relative;
 }
 
 .product-buttons .buy,
@@ -1004,6 +1051,7 @@ footer {
 	min-height: 20px;
     margin-top: -5px;
     margin-bottom: 10px;
+    user-select: none;
 }
 
  /*новая цена*/
@@ -1018,6 +1066,7 @@ footer {
     color: white;
     background: #ee3643;
     border-radius: 3px;
+    user-select: none;
 }
 
 .catalog-item .price:after{
@@ -1094,6 +1143,7 @@ footer {
  	margin: 0;
  	margin-bottom: 40px;
  	margin-top: 32px;
+ 	cursor: pointer;
  }
 
  .contacts .red-button {
@@ -1139,6 +1189,7 @@ footer {
 	list-style: none;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	margin-bottom: 15px;
 }
 
 .breadcrumbs li {
@@ -1215,7 +1266,7 @@ footer {
 
 .range-filter {
 	width: 220px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .range-controls {
@@ -1303,11 +1354,13 @@ footer {
 	padding: 0;
   	margin: 0;
   	border-top: 1px solid #e5e5e5;
-  	padding-top: 17px;
+  	padding-top: 16px;
 }
 
+
 .bottom-filter {
-	margin-bottom: 64px;
+	margin-bottom: 80px;
+	padding-top: 19px;
 }
 
 .filter ul {
@@ -1440,6 +1493,7 @@ footer {
 	height: 47px;
 	box-shadow: inset 0 -30px 0px -25px #b52933;
 	padding: 11px 56px;
+	user-select: none;
 
 }
 
@@ -1521,6 +1575,9 @@ footer {
   	padding: 45px 80px 37px 80px;
   	border-top: 7px solid #ff5357;
   	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
+  	z-index: 12;
+  	background-image: linear-gradient(to top, #f1f1f1 112px, #ffffff 112px);
+	background-position: 50% 50%;
 }
 
 .modal-label {
@@ -1544,7 +1601,7 @@ footer {
 .user-mail {
 	width: 220px;
 	height: 38px;
-	border: 2px solid #dee3e4;
+	border: 2px solid #d7dcde;
 	border-radius: 2px;
 }
 
@@ -1552,13 +1609,30 @@ footer {
 	display: block;
 	width: 460px;
 	height: 114px;
-	border: 2px solid #dee3e4;
+	border: 2px solid #d7dcde;
 	border-radius: 2px;
 	resize: none;
 	margin-bottom: 74px;
 	margin-top: 10px;
 	padding: 10px 14px;
 
+}
+
+.user-name:hover,
+.user-mail:hover,
+.modal-column-3 textarea:hover {
+	border-color: #b5b5b5;
+}
+
+.user-name:focus,
+.user-mail:focus,
+.modal-column-3 textarea:focus {
+	outline: none;
+	border-color: #ee3643;
+}
+
+.write-us .hint {
+	background-color: #ffd180;
 }
 
 .write-us .red-button{
@@ -1574,9 +1648,7 @@ footer {
     padding: 0px 15px;
 }
 
-
-
-.modal-error {
+.index-columns + .modal-error {
   animation: shake 0.6s;
 }
 
@@ -1695,7 +1767,8 @@ position: absolute;
 }
 
 .inner-user-navigation > .user-out + .user-in {
-	display: block;
+	position: relative;
+	margin-bottom: -33px;
 }
 
 
@@ -1712,8 +1785,9 @@ position: absolute;
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
 	padding-top: 33px;
 	padding-left: 81px;
-	background-image: url("../img/green-check.png") no-repeat;
+	background-image: linear-gradient(to top, #f1f1f1 112px, #ffffff 112px);
 	background-position: 50% 50%;
+	z-index: 15;
 }
 
 .cart p {
@@ -1728,12 +1802,11 @@ position: absolute;
 .cart p:before {
 	content: "";
 	position: absolute;
-	left: 85px;
-	top: 45px;
+	left: 82px;
+    top: 47px;
 	width: 66px;
 	height: 66px;
   	background-image: url("../img/green-check.png");
-	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
@@ -1750,6 +1823,7 @@ position: absolute;
 	border-radius: 3px;
 	color: #000000;
 	border: 1px solid #000000;
+	background-color: #ffffff;
 }
 
 .cart .white-button,
@@ -1768,4 +1842,16 @@ position: absolute;
 .cart .white-button {
 	padding-left: 44px;
 	padding-right: 47px;
+}
+
+img[src*="bfg9000.jpg"] {
+	padding-right: 4px;
+}
+
+img[src*="bfg3000.jpg"] {
+	padding-right: 4px;
+}
+
+.inner {
+	margin-top: -40px;
 }
