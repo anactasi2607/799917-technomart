@@ -981,7 +981,9 @@ footer {
     justify-content: space-between;
 }
 
-
+.inner .catalog {
+	padding-top: 59px;
+}
 
 .catalog .catalog-item:last-child {
 	margin-right: 0;
