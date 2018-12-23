@@ -473,7 +473,7 @@ footer {
 	line-height: 24px;
 	font-weight: normal;
 	background-color: #32425c;
-	background-image: linear-gradient(to top, #293449 88px, #32425c 88px);
+	background-image: linear-gradient(to top, #293449 90px, #32425c 90px);
 }
 
 .footer-navigation-1 a {
@@ -843,6 +843,7 @@ footer {
 	list-style: none;
 	width: 700px;
 	justify-content: space-between;
+	margin-bottom: 31px;
 }
 
 /*стилизация товаров в каталоге*/
@@ -852,6 +853,10 @@ footer {
 	margin-right: 20px;
 	font-size: 16px;
 	text-align: center;
+}
+
+.inner .catalog-item {
+	margin-bottom: 20px;
 }
 
 /*пагинация*/
@@ -865,6 +870,10 @@ footer {
 
 .pagination-item {
 	margin-right: 10px;
+}
+
+.pagination-list li:last-child a {
+	padding: 6px 29px 6px 29px;
 }
 
 .main-header {
@@ -1218,7 +1227,7 @@ footer {
 
 .breadcrumbs li {
 	position: relative;
-	margin-right: 45px;
+	margin-right: 40px;
 }
 
 .breadcrumbs li:first-child::after {
@@ -1227,7 +1236,7 @@ footer {
   	width: 8px;
 	height: 12px;
 	top: 5px;
-	left: 30px;
+	left: 29px;
 	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
@@ -1239,7 +1248,7 @@ footer {
   	width: 8px;
 	height: 12px;
 	top: 5px;
-	left: 65px;
+	left: 67px;
 	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
@@ -1250,8 +1259,8 @@ footer {
   	position: absolute;
   	width: 8px;
 	height: 12px;
-	top: 5px;
-	left: 90px;
+	top: 4px;
+	left: 96px;
 	background-image: url("../img/icon-right-small.svg");
  	background-repeat: no-repeat;
  	background-position: 0 0;
@@ -1346,7 +1355,7 @@ footer {
 .price-controls input {
 	width: 95px;
 	min-height: 38px;
-	padding: 8px 10px;
+	padding: 7px 5px 8px 23px;
 	display: inline-block;
 	font-family: PT Sans, Arial, sans-serif;
 	font-size: 17px;
@@ -1366,7 +1375,7 @@ footer {
 
 .perforator .container {
 	padding-top: 40px;
-	padding-bottom: 70px;
+	padding-bottom: 68px;
 }
 
 .perforator p{
@@ -1381,10 +1390,13 @@ footer {
   	padding-top: 16px;
 }
 
+.top-filter {
+	margin-bottom: 25px;
+}
 
 .bottom-filter {
-	margin-bottom: 80px;
-	padding-top: 19px;
+	margin-bottom: 78px;
+	padding-top: 16px;
 }
 
 .filter ul {
@@ -1410,8 +1422,8 @@ footer {
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
-	left: -36px;
-	top: -3px;
+	left: -35px;
+	top: -2px;
 	width: 23px;
 	height: 23px;
 	background-image: url("../img/checkbox-off.svg");
@@ -1430,8 +1442,8 @@ footer {
 .filter-input-checkbox:checked + label::before {
 	content: "";
 	position: absolute;
-	left: -36px;
-	top: -3px;
+	left: -35px;
+	top: -2px;
 	width: 26px;
 	height: 23px;
 	background-image: url("../img/checkbox-on.svg");
@@ -1491,7 +1503,7 @@ footer {
 .filter-button {
 	width: 140px;
 	text-transform: uppercase;
-	padding: 12px 38px;
+	padding: 11px 38px;
 	border:1px solid #e5e5e5;
 	background-color: #ffffff;
 	cursor: pointer;
