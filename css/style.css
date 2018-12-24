@@ -72,10 +72,6 @@ label.visually-hidden {
 }
 
 
-.user-navigation a {
-	display: inline-block;
-}
-
 .user-navigation {
 	display: flex;
 	list-style: none;
@@ -84,11 +80,15 @@ label.visually-hidden {
   	width: 299px;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-content: flex-start;
+    margin-top: 12px;
+    margin-bottom: 39px;
 }
 
 .user-navigation li:nth-of-child(3) a:first-child {
 	padding-left: 50px;
 }
+
 
 .header-top a:nth-last-child(2) {
 	position: relative;
@@ -114,6 +114,18 @@ label.visually-hidden {
 
 .header-top a:nth-last-child(2):active::before {
 	opacity: 0.5;
+}
+
+.header-top .basket-not-empty {
+	background-color: #ee3643;
+}
+
+.header-top .basket-not-empty:hover {
+	background-color: #ca2c37;
+}
+
+.header-top .basket-not-empty:active {
+	background-color: #ba2732;
 }
 
 .header-top a:nth-last-child(3) {
@@ -214,9 +226,9 @@ label.visually-hidden {
 	line-height: 23px;
 	color: #ee3643;
 	font-style: italic;
-	width: 200px;
+	width: 206px;
 	margin: 0px;
-	margin-right: 16px;
+	margin-right: 10px;
 	margin-top: 2px;
 	padding-bottom: 40px;
 	user-select: none;
@@ -264,7 +276,7 @@ a {
 	color: #000000;
 	background-color: #ffffff;
 	padding-top: 11px;
-	padding-bottom: 12px;
+	padding-bottom: 10px;
 }
 
 /*войти,имя профиля и регистрация при наведении*/
@@ -304,17 +316,16 @@ a {
 }
 
 .output-profile {
-	padding-left: 47px;
-	padding: 0px;
+	padding-left: 38px;
 }
 
 .entrance-profile {
 	padding-left: 45px;
-	padding-right: 68px;
+	padding-right: 30px;
 }
 
 .entrance-profile svg {
-	top: 12px;
+	top: 0px;
     left: 12px;
     position: absolute;
 }
@@ -322,7 +333,7 @@ a {
 .output-profile svg {
 	position: absolute;
     right: 10px;
-    top: 13px;
+    top: 2px;
 }
 
 .orders {
@@ -342,7 +353,7 @@ a {
 	height: 5px;
 	border-radius: 50%;
 	color: #32425c;
-	top: 6px;
+	top: 7px;
     left: -17px;
 }
 /*правило для главной навигации*/
@@ -473,7 +484,7 @@ footer {
 	line-height: 24px;
 	font-weight: normal;
 	background-color: #32425c;
-	background-image: linear-gradient(to top, #293449 90px, #32425c 90px);
+	background-image: linear-gradient(to top, #293449 107px, #32425c 107px);
 }
 
 .footer-navigation-1 a {
@@ -555,15 +566,21 @@ footer {
 /*обратная связь и  разработчик*/
 .feedback-mail,
 .site {
+	position: relative;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffd180;
 }
 
 /*почта и сайт при наведении*/
-.feedback-mail:hover,
-.site:hover {
-	text-decoration: underline;
+.feedback-mail:hover::after,
+.site:hover::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	border: 0.5px solid #ffd180;
+	top: 16px;
+	left: 0px;
 }
 
 /*почта и сайт при клике*/
@@ -768,6 +785,10 @@ footer {
  	display: flex;
  }
 
+ .lower-footer {
+ 	padding-bottom: 17px;
+ }
+
 .top-footer {
 	margin-bottom: 80px;
 }
@@ -793,9 +814,13 @@ footer {
   	justify-content: space-between;
 }
 
+.footer-navigation-2 {
+	padding-right: 2px;
+}
+
  .footer-navigation-1 {
  	margin-top: 38px;
- 	margin-bottom: 35px;
+ 	margin-bottom: 34px;
 
  }
 
@@ -909,7 +934,10 @@ footer {
 	padding-right: 25px;
 	padding-left: 23px;
 }
-
+ 
+.user-link-small {
+	margin-top: 13px;
+}
 
 .temporarily {
 	min-height: 409px;
@@ -929,10 +957,17 @@ footer {
 	margin-right: 100px;
 }
 
+.about-us p:nth-of-type(2) {
+	padding-right: 90px;
+}
 
 .contacts {
 	width: 300px;
 	min-height: 319px;
+}
+
+.contacts p {
+	padding-right: 90px;
 }
 
 .index-columns .title {
@@ -955,11 +990,11 @@ footer {
 	margin-right: 111px;
 }
 
-.footer-logo:hover {
+.footer-logo[href]:hover {
 	background-color: #ca2c37;
 }
 
-.footer-logo:active {
+.footer-logo[href]:active {
 	background-color: #ba2732;
 }
 
@@ -982,7 +1017,7 @@ footer {
 }
 
 .inner .catalog {
-	padding-top: 59px;
+	padding-top: 58px;
 }
 
 .catalog .catalog-item:last-child {
@@ -1224,7 +1259,7 @@ footer {
 	list-style: none;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 }
 
 .breadcrumbs li {
@@ -1377,7 +1412,7 @@ footer {
 
 .perforator .container {
 	padding-top: 40px;
-	padding-bottom: 68px;
+	padding-bottom: 72px;
 }
 
 .perforator p{
@@ -1389,7 +1424,7 @@ footer {
 	padding: 0;
   	margin: 0;
   	border-top: 1px solid #e5e5e5;
-  	padding-top: 16px;
+  	padding-top: 15px;
 }
 
 .top-filter {
@@ -1437,8 +1472,8 @@ footer {
 	background-image: url("../img/checkbox-off-hover.svg");
 }
 
-.filter-input-checkbox + label:disabled::before {
-	opacity: 0.3;
+.filter-input-checkbox:focus + label::before {
+	background-image: url("../img/checkbox-off-hover.svg");
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1454,6 +1489,10 @@ footer {
 }
 
 .filter-input-checkbox:checked + label:hover::before {
+	background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.filter-input-checkbox:checked:focus + label::before {
 	background-image: url("../img/checkbox-on-hover.svg");
 }
 
@@ -1478,6 +1517,10 @@ footer {
 	background-image: url("../img/radio-off-hover.svg");
 }
 
+.filter-input-radio:focus + label::before {
+	background-image: url("../img/radio-off-hover.svg");
+}
+
 .filter-input-radio + label:disabled::before {
 	opacity: 0.3;
 }
@@ -1495,6 +1538,10 @@ footer {
 }
 
 .filter-input-radio:checked + label:hover::before {
+	background-image: url("../img/radio-on-hover.svg");
+}
+
+.filter-input-radio:checked:focus + label::before {
 	background-image: url("../img/radio-on-hover.svg");
 }
 
@@ -1535,11 +1582,11 @@ footer {
 
 }
 
-.main-logo:hover {
+.main-logo[href]:hover {
 	background-color: #ca2c37;
 }
 
-.main-logo:active {
+.main-logo[href]:active {
 	background-color: #ba2732;
 }
 
@@ -1811,7 +1858,6 @@ position: absolute;
 
 .inner-user-navigation > .user-out + .user-in {
 	position: relative;
-	margin-bottom: -33px;
 }
 
 
@@ -1896,5 +1942,5 @@ img[src*="bfg3000.jpg"] {
 }
 
 .inner {
-	margin-top: -40px;
+	margin-top: -42px;
 }
