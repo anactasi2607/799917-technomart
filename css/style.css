@@ -82,7 +82,6 @@ label.visually-hidden {
     justify-content: flex-end;
     align-content: flex-start;
     margin-top: 12px;
-    margin-bottom: 39px;
 }
 
 .user-navigation li:nth-of-child(3) a:first-child {
@@ -1317,7 +1316,7 @@ footer {
  	padding-top: 7px;
  	padding-left: 18px;
  	font-size: 13px;
- 	margin-bottom: 12px;
+ 	margin-bottom: 10px;
 
  }
 
@@ -1412,7 +1411,7 @@ footer {
 
 .perforator .container {
 	padding-top: 40px;
-	padding-bottom: 72px;
+	padding-bottom: 67px;
 }
 
 .perforator p{
