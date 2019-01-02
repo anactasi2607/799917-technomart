@@ -956,14 +956,24 @@ footer {
 	margin-top: 13px;
 }
 
-.shop-sections {
+.shop-sections-1,
+.shop-sections-2 {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 53px;
 	padding: 0;
 }
 
-.shop-sections li {
+.shop-sections-1 {
+	width: 640px;
+}
+
+.shop-sections-2 {
+	width: 300px;
+}
+
+.shop-sections-1 li,
+.shop-sections-2 li {
 	width: 300px; 
 	height: 123px;
 	padding-top: 20px;
@@ -972,10 +982,13 @@ footer {
 	margin-bottom: 20px;
 }
 
+.shop-sections {
+	display: flex;
+}
 
-.shop-sections li:nth-child(3),
-.shop-sections li:nth-child(5),
-.shop-sections li:nth-child(6) {
+.shop-sections-2 .section-3,
+.shop-sections-2 .section-5,
+.shop-sections-2 .section-6 {
 	margin-right: 0;
 }
 
