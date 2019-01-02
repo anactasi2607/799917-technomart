@@ -669,7 +669,7 @@ footer {
 	border: 1px solid #e5e5e5;
 	color: #000000;
 	text-transform: uppercase;
-	padding: 6px 14px 8px 16px;
+	padding: 6px 15px 8px 16px;
 	border-radius: 3px;
 }
 
@@ -689,6 +689,13 @@ footer {
 	background-color: #ee3643;
 }
 
+.page-2 a {
+	padding-right: 12px;
+}
+
+.page-3 a {
+	padding-right: 13px;
+}
 
 /*общие стили для кнопок*/
 .button {
@@ -751,7 +758,8 @@ footer {
 }
 
 /*блоки с заголовками популярные товары и производители*/
-.column-title {
+.brands-column-title,
+.catalog-column-title {
 	display: flex;
 	align-items: center;
 	background-color: #f9f5f0;
@@ -906,8 +914,8 @@ footer {
 	margin-right: 10px;
 }
 
-.pagination-list li:last-child a {
-	padding: 6px 29px 6px 29px;
+.next a {
+	padding: 6px 32px 6px 29px;
 }
 
 .main-header {
@@ -948,12 +956,99 @@ footer {
 	margin-top: 13px;
 }
 
-.temporarily {
-	min-height: 409px;
-	background-color: #919c9f;
+.shop-sections {
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 53px;
+	padding: 0;
 }
 
+.shop-sections li {
+	width: 300px; 
+	height: 123px;
+	padding-top: 20px;
+	padding-left: 23px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+.shop-sections li:nth-child(3),
+.shop-sections li:nth-child(5),
+.shop-sections li:nth-child(6) {
+	margin-right: 0;
+}
+
+.section-1 {
+	background-color: #ffbf47;
+	position: relative;
+	background-image: url("../img/icon-1.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 213px 30px;
+}
+
+.section-2 {
+	background-color: #3bbce3;
+	background-image: url("../img/icon-2.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 197px 34px;
+}
+
+.section-3 {
+	background-color: #dc91d8;
+	background-image: url("../img/icon-3.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 190px 30px;
+}
+
+.shop-sections .section-4 {
+	width: 620px; 
+	height: 266px;
+}
+
+.section-5 {
+	background-color: #8ed78f;
+	background-image: url("../img/icon-4.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 196px 26px;
+}
+
+.section-6 {
+	background-color: #ffc047;
+	background-image: url("../img/icon-5.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 191px 32px;
+}
+
+.title-shop-section {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.button-shop-section {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 10px 24px;
+	border-radius: 4px;
+}
+
+.button-shop-section:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-shop-section:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
 
 .wholly-header-top {
 	display: flex;
@@ -1037,21 +1132,21 @@ footer {
     width: 217px;
     height: 168px;
 }
-.catalog-item .image img {
+.image img {
     max-width: 100%;
 }
 
-.catalog-item .flag {
+.flag {
     position: absolute;
-    top: -1px;
-    right: -1px;
+    top: 0px;
+    right: 0px;
     width: 60px;
     height: 60px;
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
 }
-.catalog-item .flag-new {
+.flag-new {
     background: url("../img/new.png") no-repeat 0 0;
 }
 
@@ -1061,13 +1156,13 @@ footer {
     left: 1;
     width: 216px;
     height: 170px;
-    padding: 40px 0;
+    padding: 43px 0;
     background-color: rgb(255,255,255);
     z-index: 10;
     display: none;
 }
 
-.catalog-item article:hover .product-buttons {
+article:hover .product-buttons {
 	display: block;
 }
 
@@ -1078,10 +1173,10 @@ footer {
 .product-buttons .buy,
 .product-buttons .marker {
 	display: block;
-    width: 129px;
+    width: 135px;
     margin: 0 auto;
-    margin-bottom: 7px;
-    padding: 7px 0;
+    margin-bottom: 8px;
+    padding: 7px 0 7px 4px;
     border: 3px solid #63a63e;
     border-bottom-color: #367315; 
     background-color: #63a63e;
@@ -1639,22 +1734,22 @@ footer {
 }
 
 
-.catalog > .column-title > .title {
+.catalog-column-title .title {
 	padding-left: 28px;
 	margin-top: 23px;
 }
 
-.catalog > .column-title > .red-button {
+.catalog-column-title .red-button {
 	padding: 10px 54px 10px 56px;
 	margin-top: -1px;
 }
 
-.brands > .column-title > .title {
+.brands-column-title .title {
 	padding-left: 24px;
 	margin-top: 25px;
 }
 
-.brands > .column-title > .red-button {
+.brands-column-title .red-button {
 	padding: 10px 69px 10px 69px;
 	margin-top: -2px;
 }
