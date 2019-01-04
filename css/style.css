@@ -609,12 +609,14 @@ footer {
 }
 
 /*при наведении*/
-.red-button:hover {
+.red-button:hover,
+.red-button-shop:hover {
 	background: #ca2c37;
 }
 
 /*при клике*/
-.red-button:active {
+.red-button:active,
+.red-button-shop:active {
 	background: #ba2732;
 }
 
@@ -921,7 +923,7 @@ footer {
 .main-header {
 	background-image: linear-gradient(#293449 42px, #f3f7f9 42px);
 	padding-bottom: 1px;
-	margin-bottom: 58px;
+	margin-bottom: 45px;
 }
 
 
@@ -976,8 +978,8 @@ footer {
 .shop-sections-2 li {
 	width: 300px; 
 	height: 123px;
-	padding-top: 20px;
-	padding-left: 23px;
+	padding-top: 21px;
+	padding-left: 22px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
@@ -991,6 +993,10 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	width: 640px;
+}
+
+.shop-sections {
+	margin-bottom: 54px;
 }
 
 .shop-sections-2 .section-3,
@@ -1008,21 +1014,35 @@ footer {
 	position: relative;
 	background-image: url("../img/icon-1.svg");
  	background-repeat: no-repeat;
- 	background-position: 213px 30px;
+ 	background-position: 213px 31px;
+}
+
+
+.section-1 .button-shop-section {
+	padding: 10px 24px 11px 24px;
 }
 
 .section-2 {
 	background-color: #3bbce3;
 	background-image: url("../img/icon-2.svg");
  	background-repeat: no-repeat;
- 	background-position: 197px 34px;
+ 	background-position: 197px 33px;
+}
+
+.section-2 .button-shop-section {
+	padding: 10px 26px 11px 26px;
 }
 
 .section-3 {
 	background-color: #dc91d8;
 	background-image: url("../img/icon-3.svg");
  	background-repeat: no-repeat;
- 	background-position: 190px 30px;
+ 	background-position: 191px 31px;
+}
+
+.section-3 .button-shop-section {
+	padding: 10px 31px 11px 30px;
+	margin-left: 1px;
 }
 
 .slider {
@@ -1035,14 +1055,13 @@ footer {
 .slider-list {
   	margin: 0;
   	padding: 0;
-  
   	list-style: none;
 }
 
 .slider-item {
   	display: none;
   	padding-top: 22px;
-    padding-left: 23px;
+    padding-left: 24px;
     padding-bottom: 30px;
 }
 
@@ -1055,6 +1074,8 @@ footer {
   	color: #ffffff;
   	margin: 0;
   	padding: 0;
+  	user-select: none;
+  	margin-bottom: 3px;
 }
 
 .slider-item p {
@@ -1065,11 +1086,13 @@ footer {
   	line-height: 24px;
   	font-weight: normal;
   	color: #ffffff;
-  	margin-bottom: 130px;
+  	margin-bottom: 129px;
+  	user-select: none;
 }
 
 .slider-item .slider-title-2 {
 	font-family: PT Sans, Arial, sans-serif;
+	user-select: none;
 }
 
 .slider-controls label {
@@ -1088,7 +1111,7 @@ footer {
   	background: #ffffff;
   	position: absolute;
   	top: 2px;
-  	left: 2px;
+  	left: 0;
   	z-index: 1;
   	border-radius: 50%;
 }
@@ -1130,7 +1153,7 @@ label:first-child {
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before {
   	content: "";
     position: absolute;
-    left: 4px;
+    left: 2px;
     top: 4px;
     z-index: 2;
     width: 6px;
@@ -1147,11 +1170,21 @@ label:first-child {
  	background-position: 196px 26px;
 }
 
+.section-5 .button-shop-section {
+	padding: 10px 23px 11px 23px;
+	margin-left: 1px;
+}
+
 .section-6 {
 	background-color: #ffc047;
 	background-image: url("../img/icon-5.svg");
  	background-repeat: no-repeat;
  	background-position: 191px 32px;
+}
+
+.section-6 .button-shop-section {
+	padding: 10px 37px 11px 37px;
+	margin-left: 1px;
 }
 
 .title-shop-section {
@@ -1161,19 +1194,31 @@ label:first-child {
 	font-weight: bold;
 	color: #ffffff;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
+	user-select: none;
 }
 
+.red-button-shop,
 .button-shop-section {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
-	color: #ffffff;
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.1);
-	padding: 10px 24px;
 	border-radius: 4px;
+	user-select: none;
+	color: #ffffff;
+}
+
+.button-shop-section {
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-left: 3px;
+}
+
+.red-button-shop {
+	background-color: #ee3643;
+    padding: 11px 46px 10px 50px;
+    margin-left: 1px;
 }
 
 .button-shop-section:hover {
@@ -1183,6 +1228,7 @@ label:first-child {
 .button-shop-section:active {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .wholly-header-top {
 	display: flex;
@@ -1875,7 +1921,7 @@ article:hover .product-buttons {
 
 .catalog-column-title .red-button {
 	padding: 10px 54px 10px 56px;
-	margin-top: -1px;
+	margin-top: -3px;
 }
 
 .brands-column-title .title {
@@ -2179,5 +2225,5 @@ img[src*="bfg3000.jpg"] {
 }
 
 .inner {
-	margin-top: -42px;
+	margin-top: -28px;
 }
