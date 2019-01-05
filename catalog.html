@@ -149,6 +149,25 @@
             </form>
           </section> 
           <section class="catalog">
+            <div class="sorting">
+              <h3>Сортировка:</h3>
+              <ul class="sorting-criterion">
+                <li class="sorting-item">
+                  <input class="visually-hidden sorting-item-radio" type="radio" name="sorting-group" value="price" id="sorting-price" checked>
+                  <label for="sorting-price">По цене</label>
+                </li>
+                <li class="sorting-item">
+                  <input class="visually-hidden sorting-item-radio" type="radio" name="sorting-group" value="type" id="sorting-type">
+                  <label for="sorting-type">По типу</label>
+                </li>
+                <li class="sorting-item">
+                  <input class="visually-hidden sorting-item-radio" type="radio" name="sorting-group" value="functionality" id="sorting-functionality">
+                  <label for="sorting-functionality">По функционалу</label>
+                </li>
+              </ul>
+              <div class="slider-controls">
+              </div>
+            </div>
             <h3 class="visually-hidden">Список товаров</h3>
             <ul class="inner-catalog-list">
               <li class="catalog-item">

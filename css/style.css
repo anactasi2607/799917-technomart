@@ -1691,6 +1691,55 @@ article:hover .product-buttons {
 	margin-left: 8px;
 }
 
+.sorting {
+	background-color: #f7f3ec;
+	display: flex;
+}
+
+.sorting-criterion {
+	display: flex;
+}
+
+.sorting h3,
+.sorting-item label {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.sorting-item-radio+label {
+	color: rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.sorting-item-radio+label::after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    border: 0.5px dotted #ee3643;
+    top: 16px;
+    left: 0px;
+}
+
+.sorting-item-radio:hover+label {
+	color: rgba(0, 0, 0, 1);
+	position: relative;
+}
+
+.sorting-item-radio:hover+label::after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    border: 0.5px solid #ee3643;
+    top: 16px;
+    left: 0px;
+}
+
+.sorting-item-radio:checked+label {
+	color: #ee3643;
+}
+
 .perforator .container {
 	padding-top: 40px;
 	padding-bottom: 67px;
@@ -1730,9 +1779,7 @@ article:hover .product-buttons {
 
 .filter-option label {
 	position: relative;
-
 	display: block;
-
 	cursor: pointer;
 	user-select: none;
 }
