@@ -1694,10 +1694,14 @@ article:hover .product-buttons {
 .sorting {
 	background-color: #f7f3ec;
 	display: flex;
+	padding-top: 7px;
+	padding-left: 19px;
 }
 
 .sorting-criterion {
 	display: flex;
+	padding: 0;
+    margin: 0;
 }
 
 .sorting h3,
@@ -1706,6 +1710,14 @@ article:hover .product-buttons {
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
+	padding: 0;
+    margin: 0;
+}
+
+.sorting h3 {
+	padding-top: 3px;
+	margin-right: 140px;
+	padding-bottom: 10px;
 }
 
 .sorting-item-radio+label {
@@ -1739,6 +1751,14 @@ article:hover .product-buttons {
 .sorting-item-radio:checked+label {
 	color: #ee3643;
 }
+
+.sorting-item:first-child {
+	margin-right: 70px;
+}
+ .sorting-item:nth-child(2) {
+ 	margin-right: 65px;
+ }
+ /*стили для радио сортировки*/
 
 .perforator .container {
 	padding-top: 40px;
