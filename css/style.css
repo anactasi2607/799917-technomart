@@ -1300,10 +1300,6 @@ label:first-child {
     justify-content: space-between;
 }
 
-.inner .catalog {
-	padding-top: 58px;
-}
-
 .catalog .catalog-item:last-child {
 	margin-right: 0;
 }
@@ -1692,17 +1688,22 @@ article:hover .product-buttons {
 }
 
 .sorting {
+	position: relative;
 	background-color: #f7f3ec;
 	display: flex;
 	padding-top: 7px;
 	padding-left: 19px;
+	margin-bottom: 19px;
 }
 
 .sorting-criterion {
 	display: flex;
 	padding: 0;
     margin: 0;
+    position: relative;
 }
+
+
 
 .sorting h3,
 .sorting-item label {
@@ -1712,6 +1713,10 @@ article:hover .product-buttons {
 	line-height: 18px;
 	padding: 0;
     margin: 0;
+}
+
+.sorting-item label {
+	cursor: pointer;
 }
 
 .sorting h3 {
@@ -1758,7 +1763,73 @@ article:hover .product-buttons {
  .sorting-item:nth-child(2) {
  	margin-right: 65px;
  }
- /*стили для радио сортировки*/
+
+.sorting-controls {
+	position: absolute;
+    left: 640px;
+    bottom: 0px;
+    z-index: 100;
+    font-size: 0;
+}
+
+.sorting-controls-item-1,
+.sorting-controls-item-2 {
+	position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.sorting-controls-item-1 {
+	margin-right: 20px;
+}
+
+.sorting-controls-input-1+label::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+}
+
+.sorting-controls-input-1:checked+label::before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #ee3643;
+}
+
+.sorting-controls-input-2:checked+label::before{
+	border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #ee3643;
+}
+
+.sorting-controls-input-1:hover+label::before {
+	border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 1);
+}
+
+.sorting-controls-input-2:hover+label::before {
+	border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 1);
+}
+
+.sorting-controls-input-2+label::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.3);
+}
 
 .perforator .container {
 	padding-top: 40px;
