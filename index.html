@@ -77,7 +77,7 @@
             </ul>
             <section class="slider">
               <h2 class="visually-hidden">Дрели и перфораторы</h2>
-              <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+              <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked >
               <input class="visually-hidden" type="radio" id="product-2" name="toggle">
               <div class="slider-controls">
                 <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
@@ -246,15 +246,37 @@
         </section>
       </div>
       <div class="advantages">
-        <section class="services container">
-          <h2 class="title">Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
-        </section>
+        <div class="container">
+          <section class="services">
+            <h2 class="title">Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. </p>
+          </section>
+          <div class="services-controls">
+            <input class="visually-hidden services-controls-input" type="radio" id="services-1" name="relay" checked>
+            <label class="services-controls-item services-controls-item-1" for="services-1">Доставка</label>
+            <input class="visually-hidden services-controls-input" type="radio" id="services-2" name="relay">
+            <label class="services-controls-item services-controls-item-2" for="services-2">Гарантия</label>
+            <input class="visually-hidden services-controls-input" type="radio" id="services-3" name="relay">
+            <label class="services-controls-item services-controls-item-3" for="services-3">Кредит</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Дрели</h3>
+              <p class="slider-title-1">Соседям на радость!</p>
+              <a class="red-button-shop" href="catalog.html">открыть каталог</a>  
+            </li>
+            <li class="slider-item">
+              <h3>Перфораторы</h3>
+              <p class="slider-title-2">Настоящие мужские игрушки</p>
+              <a class="red-button-shop" href="catalog.html">открыть каталог</a>  
+            </li>
+          </ul>
+        </div>  
           <!--здесь блок про доставку/гарантию/кредит-->
-        <section class="delivery container">
+        <!--<section class="delivery container">
           <h2 class="title">Доставка</h2>
           <p>Мы с удовольствием доставим Ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        </section>
+        </section>-->
       </div>
         <div class="index-columns container">
   		    <section class="about-us">
