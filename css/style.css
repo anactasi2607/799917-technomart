@@ -806,10 +806,26 @@ footer {
 	margin-bottom: 70px;
 }
 
+.services-slider {
+	display: flex;
+}
+
 .services-controls {
 	display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.services-item h3 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #32425c;
+	text-transform: uppercase;
+	padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .services-controls label {
@@ -824,7 +840,7 @@ footer {
 }
 
 .services-controls-item-1 {
-	padding: 15px 140px 17px 21px;
+	padding: 13px 140px 18px 21px;
 }
 
 .services-controls-item-2 {
@@ -832,7 +848,7 @@ footer {
 }
 
 .services-controls-item-3 {
-	padding: 12px 157px 16px 22px;
+	padding: 11px 157px 16px 22px;
 }
 
 .services-controls-input:hover + label {
@@ -843,6 +859,27 @@ footer {
 	color: #32425c;
 	background-color: #ffffff;
 	border: none;
+}
+
+.services-list {
+	padding: 0;
+    margin: 0;
+}
+
+.services-item {
+	padding-top: 4px;
+    padding-left: 80px;
+}
+
+.services-item-1 p {
+	width: 280px;
+    padding-bottom: 130px;
+}
+
+.services-item-1 {
+	background-image: url(../img/service-1.png);
+    background-repeat: no-repeat;
+    background-position: 231px 23px;
 }
  
  /*сетка подвала*/
