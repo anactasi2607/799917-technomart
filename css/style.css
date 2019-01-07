@@ -806,6 +806,11 @@ footer {
 	margin-bottom: 70px;
 }
 
+.services-container {
+	width: 952px;
+    margin: auto;
+}
+
 .services-slider {
 	display: flex;
 }
@@ -892,6 +897,26 @@ footer {
 	background-image: url(../img/service-2.png);
     background-repeat: no-repeat;
     background-position: 319px 1px;
+}
+
+.services-item-3 p {
+	width: 280px;
+	padding-bottom: 12px;
+}
+
+.services-item-3 {
+	background-image: url(../img/service-3.png);
+    background-repeat: no-repeat;
+    background-position: 245px 0px;
+    padding-bottom: 113px;
+}
+
+.services-red-button {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	padding: 11px 45px 9px 45px;
 }
  
  /*сетка подвала*/
