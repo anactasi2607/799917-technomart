@@ -707,8 +707,6 @@ footer {
 	color: #ffffff;
 }
 
-
-
  /*сеточные стили*/
 
  /*блок справа от логотипа в шапке*/
@@ -802,8 +800,9 @@ footer {
 }
 
 .services {
-	width: 400px;
+	width: 405px;
 	margin-bottom: 70px;
+	padding-left: 5px;
 }
 
 .services-container {
@@ -813,6 +812,7 @@ footer {
 
 .services-slider {
 	display: flex;
+	padding-left: 5px;
 }
 
 .services-controls {
@@ -842,6 +842,7 @@ footer {
 	background-color: #32425c;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
+	cursor: pointer;
 }
 
 .services-controls-item-1 {
@@ -875,11 +876,12 @@ footer {
 .services-item {
 	padding-top: 4px;
     padding-left: 80px;
+    display: none;
+    min-height: 265px;
 }
 
 .services-item-1 p {
 	width: 280px;
-    padding-bottom: 130px;
 }
 
 .services-item-1 {
@@ -890,7 +892,6 @@ footer {
 
 .services-item-2 p {
 	width: 390px;
-    padding-bottom: 100px;
 }
 
 .services-item-2 {
@@ -901,7 +902,6 @@ footer {
 
 .services-item-3 p {
 	width: 280px;
-	padding-bottom: 12px;
 }
 
 .services-item-3 {
@@ -917,6 +917,19 @@ footer {
 	line-height: 18px;
 	font-weight: normal;
 	padding: 11px 45px 9px 45px;
+	cursor: pointer;
+}
+
+.services-input-1:checked ~ .services-list .services-item-1 {
+	display: block;
+}
+
+.services-input-2:checked ~ .services-list .services-item-2 {
+	display: block;
+}
+
+.services-input-3:checked ~ .services-list .services-item-3 {
+	display: block;
 }
  
  /*сетка подвала*/
@@ -1260,16 +1273,16 @@ footer {
   background-position: 0 0;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.slider-input-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.slider-input-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+.slider-input-1:checked ~ .slider-controls .slider-controls-item--1::before,
+.slider-input-2:checked ~ .slider-controls .slider-controls-item--2::before {
   	content: "";
     position: absolute;
     left: 2px;
@@ -1280,7 +1293,6 @@ footer {
     border-radius: 50%;
     background-color: #ee3643;
 }
-
 
 .section-5 {
 	background-color: #8ed78f;
@@ -1726,12 +1738,11 @@ article:hover .product-buttons {
 	margin: 0;
 	padding: 0;
 	border: none;
-	margin-bottom: 25px;
 }
 
 .range-filter {
 	width: 220px;
-	margin-top: 15px;
+	margin-top: 13px;
 }
 
 .range-controls {
@@ -1796,15 +1807,17 @@ article:hover .product-buttons {
 	border-radius: 5px;
 	background: #f7f3ec;
 	vertical-align: baseline;
+	margin-bottom: 25px;
 }
 
 .price-controls input:first-child {
 	margin-right: 8px;
 }
 
-.price-controls input:last-child {
-	margin-left: 8px;
+.price-controls label + input {
+	margin-left: 5px;
 }
+
 
 .sorting {
 	position: relative;
@@ -1849,7 +1862,7 @@ article:hover .product-buttons {
 	position: relative;
 }
 
-.sorting-item-radio+label::after {
+.sorting-item-radio:not(:checked)+label::after {
 	content: "";
     position: absolute;
     width: 100%;
