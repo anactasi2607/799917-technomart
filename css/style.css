@@ -116,16 +116,20 @@ label.visually-hidden {
 	opacity: 0.5;
 }
 
-.header-top .basket-not-empty {
+.basket-not-empty,
+.marker-not-empty {
 	background-color: #ee3643;
 }
 
-.header-top .basket-not-empty:hover {
-	background-color: #ca2c37;
+
+.header-top .basket-not-empty:hover,
+.header-top .marker-not-empty:hover {
+	background-color: #ee3643;
 }
 
-.header-top .basket-not-empty:active {
-	background-color: #ba2732;
+.header-top .basket-not-empty:active,
+.header-top .marker-not-empty:active {
+	background-color: #ee3643;
 }
 
 .header-top a:nth-last-child(3) {
@@ -1256,7 +1260,7 @@ footer {
   position: absolute;
   left: 50%;
   bottom: 24px;
-  z-index: 100;
+  z-index: 10;
   font-size: 0;
   transform: translateX(-50%);
 }
@@ -1339,6 +1343,7 @@ footer {
 	border-radius: 4px;
 	user-select: none;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 .button-shop-section {
@@ -1451,7 +1456,7 @@ footer {
     height: 60px;
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+    z-index: 12;
 }
 .flag-new {
     background: url("../img/new.png") no-repeat 0 0;
@@ -2399,11 +2404,6 @@ position: absolute;
   border: none;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
 .user-out {
 	margin-left: 10px;
 }
@@ -2496,4 +2496,9 @@ img[src*="bfg3000.jpg"] {
 
 .inner {
 	margin-top: -28px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
