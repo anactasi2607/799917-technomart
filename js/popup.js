@@ -1,7 +1,7 @@
 
 var link = document.querySelector(".write-us-button");
 var popup = document.querySelector(".write-us");
-var close = document.querySelector(".modal-close");
+var close = popup.querySelector(".modal-close");
 var userName = popup.querySelector(".user-name");
 var form = popup.querySelector("form");
 var userMail = popup.querySelector(".user-mail");
@@ -12,7 +12,7 @@ var mapClose = mapPopup.querySelector(".modal-close");
 var buyLink = document.querySelector(".buy");
 var popupBuy = document.querySelector(".cart");
 var goOn = document.querySelector(".white-button");
-var closeBuy = document.querySelector(".modal-close");
+var closeBuy = popupBuy.querySelector(".modal-close");
 var basket = document.querySelector(".basket");
 var marker = document.querySelector(".marker");
 var markerList = document.querySelector(".marker-list");
@@ -63,8 +63,8 @@ window.addEventListener("keydown", function (evt) {
 });
 
 mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
+  {evt.preventDefault();
+  mapPopup.classList.add("modal-show");}
 });
 
 mapClose.addEventListener("click", function (evt) {
@@ -87,6 +87,7 @@ buyLink.addEventListener("click", function (evt) {
   popupBuy.classList.add("modal-show");
   basket.classList.add("basket-not-empty");
 });
+
 
 closeBuy.addEventListener("click", function (evt) {
   evt.preventDefault();
