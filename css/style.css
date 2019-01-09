@@ -1,4 +1,4 @@
-/*базовые стили*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -11,7 +11,7 @@ body {
 	min-width: 1200px;
 }
 
-/*убираем подчеркивание ссылки*/
+
 a {
   	text-decoration: none;
 }
@@ -47,16 +47,13 @@ label.visually-hidden {
 	overflow: hidden;
 }
 
-/*общие стили для блока правее логотипа*/
 .header-top {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	color :#ffffff;
-
 }
 
-/*определяю цвет текста для ссылок*/
 .header-top a {
 	color: #ffffff;
 	display: block;
@@ -71,7 +68,6 @@ label.visually-hidden {
 	width: 270px;
 	padding-top: 12px;
 }
-
 
 .user-navigation {
 	display: flex;
@@ -88,7 +84,6 @@ label.visually-hidden {
 .entrance-profile {
 	padding-left: 50px;
 }
-
 
 .header-top a:nth-last-child(2) {
 	position: relative;
@@ -120,7 +115,6 @@ label.visually-hidden {
 .marker-not-empty {
 	background-color: #ee3643;
 }
-
 
 .header-top .basket-not-empty:hover,
 .header-top .marker-not-empty:hover {
@@ -158,13 +152,11 @@ label.visually-hidden {
 	opacity: 0.5;
 }
 
-/*цвет фона для ссылки на оформление заказа*/
 .header-top a:last-child {
 	background-color: #63a63e;
 	padding-left: 20px;
 }
 
-/*цвет формы поиска*/
 .header-top input {
 	background-color: #293449;
 	min-height: 42px;
@@ -192,20 +184,15 @@ label.visually-hidden {
  	opacity: 0.3;
 }
 
-
-/*цвет фона при наведении для поиска и ссылок*/
 .header-top a:hover,
 .header-top input:hover {
 	background-color: #212a3a;
 }
 
-/*цвет фона при наведении для ссылки на оформление заказа*/
 .header-top a:last-child:hover {
 	background-color: #5fbb2d;
-
 }
 
-/*цвет фона для ссылок при нажатии*/
 .header-top a:active{
 	background-color: #161d29;
 	opacity: 0.6;
@@ -805,8 +792,8 @@ footer {
 
 .services {
 	width: 405px;
-	margin-bottom: 70px;
-	padding-left: 5px;
+	margin-bottom: 28px;
+	padding-left: 6px;
 }
 
 .services-container {
@@ -816,13 +803,27 @@ footer {
 
 .services-slider {
 	display: flex;
-	padding-left: 5px;
+	padding-left: 6px;
 }
 
 .services-controls {
 	display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    padding-top: 40px
+}
+
+.services-controls::before {
+	content: "";
+    position: absolute;
+    background-image: url(../img/line.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 279px;
+    top: 0;
+    left: 230px;
 }
 
 .services-item h3 {
@@ -861,7 +862,7 @@ footer {
 	padding: 11px 157px 16px 22px;
 }
 
-.services-controls-input:hover + label {
+.services-controls label:hover {
 	background-color: #293449;
 }
 
@@ -871,10 +872,19 @@ footer {
 	border: none;
 }
 
+.services-input-1:checked ~ .services-controls label:nth-child(1),
+.services-input-2:checked ~ .services-controls label:nth-child(2),
+.services-input-3:checked ~ .services-controls label:nth-child(3) {
+	color: #32425c;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
 .services-list {
 	padding: 0;
     margin: 0;
     width: 800px;
+    padding-top: 43px;
 }
 
 .services-item {
