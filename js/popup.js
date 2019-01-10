@@ -122,13 +122,3 @@ for (var i = 0; i < marker.length; i++) {
 })
 };
 }
-
-
-
-
-/*for (var i = 0; i < marker.length; i++) {
-  marker[i].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  markerList.classList.add("marker-not-empty");
-});
-}*/

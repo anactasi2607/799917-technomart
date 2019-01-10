@@ -11,7 +11,6 @@ body {
 	min-width: 1200px;
 }
 
-
 a {
   	text-decoration: none;
 }
@@ -23,14 +22,14 @@ img {
 
 html { 
 	-webkit-box-sizing: border-box; 
-	        box-sizing: border-box; 
+	box-sizing: border-box; 
 } 
 
 *, 
 *::before, 
 *::after { 
 	-webkit-box-sizing: inherit; 
-	        box-sizing: inherit; 
+	box-sizing: inherit; 
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -45,7 +44,7 @@ label.visually-hidden {
 	padding: 0;
 	white-space: nowrap;
 	-webkit-clip-path: inset(100%);
-	        clip-path: inset(100%);
+	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -81,12 +80,12 @@ label.visually-hidden {
   	padding: 0;
   	width: 299px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
     margin-top: 12px;
 }
 
@@ -783,7 +782,7 @@ footer {
 	        justify-content: space-between;
 	-ms-flex-line-pack: stretch;
 	    align-content: stretch;
-	padding-top: 56px;
+	padding-top: 54px;
 	padding-bottom: 86px;
 }
 
@@ -844,7 +843,7 @@ footer {
 
 .brands-logo img {
 	width: 218px;
-	height: 142px;
+	height: 143px;
 }
 
 
@@ -928,7 +927,7 @@ footer {
 }
 
 .services-controls-item-1 {
-	padding: 13px 140px 18px 21px;
+	padding: 13px 140px 17px 21px;
 }
 
 .services-controls-item-2 {
@@ -947,6 +946,7 @@ footer {
 	color: #32425c;
 	background-color: #ffffff;
 	border: none;
+
 }
 
 .services-input-1:checked ~ .services-controls label:nth-child(1),
@@ -955,13 +955,14 @@ footer {
 	color: #32425c;
 	background-color: #ffffff;
 	border-color: #ffffff;
+	cursor: default;
 }
 
 .services-list {
 	padding: 0;
     margin: 0;
     width: 800px;
-    padding-top: 43px;
+    padding-top: 41px;
 }
 
 .services-item {
@@ -1087,9 +1088,9 @@ footer {
 /*стилизация копирайта*/
  .copyright-column {
  	width: 260px;
- 	padding-top: 7px;
+ 	padding-top: 6px;
     margin-right: 139px;
-    margin-left: 2px;
+    margin-left: 1px;
  }
 
  .developed-by {
@@ -1121,7 +1122,7 @@ footer {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 59px;
 }
 
 /*блок с товарами на странице каталога*/
@@ -1261,7 +1262,7 @@ footer {
 }
 
 .shop-sections {
-	margin-bottom: 54px;
+	margin-bottom: 53px;
 }
 
 .shop-sections-2 .section-3,
@@ -1638,7 +1639,7 @@ footer {
     max-width: 100%;
 }
 
-.flag {
+.flag-shop {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1648,6 +1649,18 @@ footer {
     overflow: hidden;
     z-index: 12;
 }
+
+.flag {
+    position: absolute;
+    top: -1px;
+    left: 160px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 12;
+}
+
 .flag-new {
     background: url("../img/new.png") no-repeat 0 0;
 }
@@ -1884,7 +1897,7 @@ article:hover .product-buttons {
 	        justify-content: flex-start;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin-bottom: 19px;
+	margin-bottom: 17px;
 }
 
 .breadcrumbs li {
@@ -1942,7 +1955,7 @@ article:hover .product-buttons {
  	padding-top: 7px;
  	padding-left: 18px;
  	font-size: 13px;
- 	margin-bottom: 10px;
+ 	margin-bottom: 12px;
 
  }
 
@@ -2046,7 +2059,7 @@ article:hover .product-buttons {
 	display: flex;
 	padding-top: 7px;
 	padding-left: 19px;
-	margin-bottom: 19px;
+	margin-bottom: 20px;
 }
 
 .sorting-criterion {
@@ -2187,7 +2200,7 @@ article:hover .product-buttons {
 
 .perforator .container {
 	padding-top: 40px;
-	padding-bottom: 67px;
+	padding-bottom: 69px;
 }
 
 .perforator p{
@@ -2199,16 +2212,16 @@ article:hover .product-buttons {
 	padding: 0;
   	margin: 0;
   	border-top: 1px solid #e5e5e5;
-  	padding-top: 15px;
+  	padding-top: 16px;
 }
 
 .top-filter {
-	margin-bottom: 25px;
+	margin-bottom: 21px;
 }
 
 .bottom-filter {
-	margin-bottom: 78px;
-	padding-top: 16px;
+	margin-bottom: 77px;
+	padding-top: 17px;
 }
 
 .filter ul {
@@ -2218,7 +2231,7 @@ article:hover .product-buttons {
   }
 
  .filter-option {
-	margin-bottom: 19px;
+	margin-bottom: 20px;
 	padding-left: 35px;
 }
 
@@ -2416,12 +2429,12 @@ article:hover .product-buttons {
 
 .catalog-column-title .title {
 	padding-left: 28px;
-	margin-top: 23px;
+	margin-top: 25px;
 }
 
 .catalog-column-title .red-button {
 	padding: 10px 54px 10px 56px;
-	margin-top: -3px;
+    margin-top: -1px;
 }
 
 .brands-column-title .title {
