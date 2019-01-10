@@ -1,21 +1,23 @@
 
 var link = document.querySelector(".write-us-button");
 var popup = document.querySelector(".write-us");
-var close = popup.querySelector(".modal-close");
-var userName = popup.querySelector(".user-name");
-var form = popup.querySelector("form");
-var userMail = popup.querySelector(".user-mail");
-var comment = popup.querySelector("[name=comment]");
+var close = document.querySelector(".write-us .modal-close");
+var userName = document.querySelector(".user-name");
+var form = document.querySelector(".write-us form");
+var userMail = document.querySelector(".user-mail");
+var comment = document.querySelector("[name=comment]");
 var mapLink = document.querySelector(".map-link");
 var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+var mapClose = document.querySelector(".modal-map .modal-close");
 var buyLink = document.querySelector(".buy");
 var popupBuy = document.querySelector(".cart");
 var goOn = document.querySelector(".white-button");
-var closeBuy = popupBuy.querySelector(".modal-close");
+var closeBuy = document.querySelector(".cart .modal-close");
 var basket = document.querySelector(".basket");
 var marker = document.querySelector(".marker");
 var markerList = document.querySelector(".marker-list");
+
+if (popup) {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -52,6 +54,7 @@ form.addEventListener("submit", function (evt) {
 
 });
 
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -61,6 +64,9 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+}
+
+if (mapPopup) {
 
 mapLink.addEventListener("click", function (evt) {
   {evt.preventDefault();
@@ -81,13 +87,15 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+}
+
+if (popupBuy) {
 
 buyLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupBuy.classList.add("modal-show");
   basket.classList.add("basket-not-empty");
 });
-
 
 closeBuy.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -112,3 +120,5 @@ marker.addEventListener("click", function (evt) {
   evt.preventDefault();
   markerList.classList.add("marker-not-empty");
 });
+}
+
