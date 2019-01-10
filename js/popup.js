@@ -49,11 +49,8 @@ form.addEventListener("submit", function (evt) {
     popup.classList.add("modal-error");
     userMail.classList.remove("hint");
     userMail.classList.add("hint");
-
 } 
-
 });
-
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -91,18 +88,13 @@ window.addEventListener("keydown", function (evt) {
 
 if (popupBuy) {
 
-/*buyLinks.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupBuy.classList.add("modal-show");
-  basket.classList.add("basket-not-empty");
-});*/
-
 for (var i = 0; i < buyLinks.length; i++) {
   buyLinks[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   popupBuy.classList.add("modal-show");
   basket.classList.add("basket-not-empty");
-});
+})
+};
 
 closeBuy.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -123,12 +115,20 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
+for (var i = 0; i < marker.length; i++) {
+  marker[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  markerList.classList.add("marker-not-empty");
+})
+};
 }
 
-marker.addEventListener("click", function (evt) {
+
+
+
+/*for (var i = 0; i < marker.length; i++) {
+  marker[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   markerList.classList.add("marker-not-empty");
 });
-}
-
+}*/
