@@ -486,7 +486,7 @@ footer {
 	margin-left: 2px;
 }
 
-.footer-navigation-1 a:hover::after {
+.footer-navigation-1 a:hover:not(:active)::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -505,7 +505,7 @@ footer {
 	position: relative;
 }
 
-.footer-navigation-2 a:hover::after {
+.footer-navigation-2 a:hover:not(:active)::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -561,8 +561,8 @@ footer {
 	color: #ffd180;
 }
 
-.feedback-mail:hover::after,
-.site:hover::after {
+.feedback-mail:hover:not(:active)::after,
+.site:hover:not(:active)::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -583,6 +583,7 @@ footer {
 	display: inline-block;
 	border-radius: 3px;
 	vertical-align: baseline;
+	flex-shrink: 0;
 }
 
 .red-button:hover,
@@ -643,7 +644,7 @@ footer {
 	border-radius: 3px;
 }
 
-.pagination-item a:hover {
+.pagination-item:not(.pagination-item-current) a:hover {
 	border: 1px solid #bdc6ca;
 }
 
@@ -1741,6 +1742,7 @@ article:hover .product-buttons {
 }
 
 .map {
+	display: block;
 	width: 300px; 
 	height: 157px;
 	margin: 0;
@@ -1968,7 +1970,9 @@ article:hover .product-buttons {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
+	padding-right: 100px;
 	margin: 0;
 	position: relative;
 }
@@ -2012,7 +2016,7 @@ article:hover .product-buttons {
 	position: relative;
 }
 
-.sorting-item-radio:hover+label::after {
+.sorting-item-radio:not(:checked):hover+label::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -2039,6 +2043,7 @@ article:hover .product-buttons {
 	bottom: 0px;
 	z-index: 100;
 	font-size: 0;
+	flex-shrink: 0;
 }
 
 .sorting-controls-item-1,
@@ -2076,13 +2081,13 @@ article:hover .product-buttons {
 	border-top: 10px solid #ee3643;
 }
 
-.sorting-controls-input-1:hover+label::before {
+.sorting-controls-input-1:not(:checked):hover+label::before {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-bottom: 10px solid rgba(0, 0, 0, 1);
 }
 
-.sorting-controls-input-2:hover+label::before {
+.sorting-controls-input-2:not(:checked):hover+label::before {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 10px solid rgba(0, 0, 0, 1);
@@ -2308,8 +2313,8 @@ article:hover .product-buttons {
 	background-color: #212a3a;
 }
 
-.search-text:hover + svg,
-.search-text:focus + svg {
+.search:hover svg ,
+.search:focus svg {
 	opacity: 1;
 }
 
