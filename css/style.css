@@ -467,9 +467,6 @@ footer {
 	line-height: 24px;
 	font-weight: normal;
 	background-color: #32425c;
-	background-image: -webkit-linear-gradient(bottom, #293449 107px, #32425c 107px);
-	background-image: -o-linear-gradient(bottom, #293449 107px, #32425c 107px);
-	background-image: linear-gradient(to top, #293449 107px, #32425c 107px);
 }
 
 .footer-navigation-1 a {
@@ -960,19 +957,23 @@ footer {
 	display: block;
 }
 
-.top-footer,
-.lower-footer{
+.top-footer {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding-bottom: 49px;
 }
 
 .lower-footer {
+	padding-top: 31px;
 	padding-bottom: 17px;
+	background-color: #293449;
 }
 
-.top-footer {
-	margin-bottom: 80px;
+.lower-footer .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .top-footer-column {
