@@ -2337,10 +2337,12 @@ article:hover .product-buttons {
 
 .search-text::-moz-placeholder {
 	color: #ffffff;
+	opacity: 1;
 }
 
 .search-text:-moz-placeholder {
 	color: #ffffff;
+	opacity: 1;
 }
 
 .search-text:-ms-input-placeholder {
