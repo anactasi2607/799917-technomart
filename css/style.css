@@ -640,7 +640,7 @@ footer {
 	border: 1px solid #e5e5e5;
 	color: #000000;
 	text-transform: uppercase;
-	padding: 6px 15px 8px 16px;
+	padding: 6px 15px 8px 15px;
 	border-radius: 3px;
 }
 
@@ -1097,7 +1097,7 @@ footer {
 }
 
 .next a {
-	padding: 6px 32px 6px 29px;
+	padding: 6px 32px 8px 32px;
 }
 
 .main-header {
@@ -1936,7 +1936,7 @@ article:hover .product-buttons {
 .price-controls input {
 	width: 95px;
 	min-height: 38px;
-	padding: 7px 5px 8px 23px;
+	padding: 7px 5px 7px 23px;
 	display: inline-block;
 	font-family: PT Sans, Arial, sans-serif;
 	font-size: 17px;
@@ -2328,6 +2328,22 @@ article:hover .product-buttons {
 .search-text:focus {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.search-text::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.search-text::-moz-placeholder {
+	color: #ffffff;
+}
+
+.search-text:-moz-placeholder {
+	color: #ffffff;
+}
+
+.search-text:-ms-input-placeholder {
+	color: #ffffff;
 }
 
 .catalog-column-title .title {
