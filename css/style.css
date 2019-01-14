@@ -1978,7 +1978,7 @@ article:hover .product-buttons {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	padding-right: 100px;
+	width: 400px;
 }
 
 .sorting h3,
@@ -2001,6 +2001,7 @@ article:hover .product-buttons {
 	margin-right: 140px;
 	padding-top: 3px;
 	padding-bottom: 10px;
+	align-self: center;
 }
 
 .sorting-item-radio+label {
@@ -2035,18 +2036,22 @@ article:hover .product-buttons {
 	color: #ee3643;
 }
 
-.sorting-item:first-child {
-	margin-right: 70px;
+.sorting-item {
+	margin-right: 40px;
 }
 
 .sorting-item:nth-child(2) {
 	margin-right: 65px;
 }
 
+.sorting-item:first-child {
+	margin-right: 70px;
+}
+
 .sorting-controls {
 	position: absolute;
 	left: 640px;
-	bottom: 0px;
+	top: 50%;
 	z-index: 100;
 	font-size: 0;
 	-ms-flex-negative: 0;
@@ -2072,6 +2077,7 @@ article:hover .product-buttons {
 	z-index: 2;
 	width: 0;
 	height: 0;
+	top: -5px;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-bottom: 10px solid rgba(0, 0, 0, 0.3);
@@ -2107,6 +2113,7 @@ article:hover .product-buttons {
 	z-index: 2;
 	width: 0;
 	height: 0;
+	top: -5px;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 10px solid rgba(0, 0, 0, 0.3);
