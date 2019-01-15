@@ -1942,15 +1942,24 @@ article:hover .product-buttons {
 	width: 95px;
 	min-height: 38px;
 	margin-bottom: 25px;
-	padding: 7px 5px 7px 23px;
 	border: none;
 	border-radius: 5px;
 	background: #f7f3ec;
 	vertical-align: baseline;
 }
 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .price-controls input:first-child {
 	margin-right: 8px;
+	padding-left: 7px;
 }
 
 .price-controls label+input {
